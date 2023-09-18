@@ -1,3 +1,4 @@
+import React from "react";
 import './Nav.css'
 
 function Nav() {
@@ -6,20 +7,18 @@ function Nav() {
     <>
 
     <header>
-      <a href="#" className="brand">@mano</a>
-
-      {/* boton de menu en responsive*/}
-      <div className="menu-btn"></div>
-
-      {/* menu normal */}
-      <div className="navigation">
-        <div className="navigation-items">
-          <a href="#">Inicio</a>
-          <a href="#">Proyectos</a>
-          <a href="#">Blog</a>
-          <a href="#">Contacto</a>
+      <a href="#" className="brand">Amano</a>
+        <div className="menu-btn">
+          <div className="navigation">
+            <div className="navigation-items">
+              <a href="#">Inicio</a>
+              <a href="#">Proyectos</a>
+              <a href="#">Blog</a>
+              <a href="#">Contacto</a>
+              <a href="#">WhatsApp</a>
+                </div>
+            </div>
         </div>
-      </div>
     </header>
     
     </>

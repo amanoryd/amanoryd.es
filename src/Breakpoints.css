@@ -33,7 +33,7 @@
         height: 5px;
     }
     header .navigation .navigation-items{
-        background: #fff;
+        background: var(--mid-tone);
         width: 600px;
         max-width: 600px;
         margin: 20px;

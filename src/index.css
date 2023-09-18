@@ -8,4 +8,9 @@
 :root {
   --color-uno: white;
   --color-dos: black;
+  --main: #8c1f1f;
+  --complement: #a6333d;
+  --complement2: #0f2940;
+  --mid-tone: #d9d4cc;
+  --low-tone: #736a5f;
 }

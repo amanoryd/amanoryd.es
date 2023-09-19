@@ -17,7 +17,7 @@ function Hero() {
           <video
             key={index}
             className={`video-slide ${index === activeSlide ? 'active' : ''}`}
-            src={`./public/${index}.mp4`}
+            src={`/${index}.mp4`}
             autoPlay
             muted
             loop

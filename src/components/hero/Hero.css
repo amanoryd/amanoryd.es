@@ -144,14 +144,14 @@ section{
     transform: scale(1.2);
 }
 
-.img-slide{
+.video-slide{
     position: absolute;
     width: 100%;
-    /* clip-path: circle(0% at 0 50%); */
+    clip-path: circle(0% at 0 50%);
 }
 
-.img-slide.active{
-    /* clip-path: circle(150% at 0 50%); */
+.video-slide.active{
+    clip-path: circle(150% at 0 50%);
     transition: 2s ease;
     transition-property: clip-path;
 }

@@ -2,39 +2,57 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
-// Custom Hook para manejar intervalos
-function useInterval(callback, delay) {
-  const savedCallback = useRef();
-
-  useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    function tick() {
-      savedCallback.current();
-    }
-    if (delay !== null) {
-      const id = setInterval(tick, delay);
-      return () => clearInterval(id);
-    }
-  }, [delay]);
-}
+import { isMobile } from 'react-device-detect';
 
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
+  const [orientation, setOrientation] = useState(window.orientation);
+
+  // Función personalizada para manejar intervalos
+  function useInterval(callback, delay) {
+    const savedCallback = useRef();
+
+    useEffect(() => {
+      savedCallback.current = callback;
+    }, [callback]);
+
+    useEffect(() => {
+      function tick() {
+        savedCallback.current();
+      }
+
+      if (delay !== null) {
+        const id = setInterval(tick, delay);
+        return () => clearInterval(id);
+      }
+    }, [delay]);
+  }
 
   // Función para cambiar al siguiente slide
   const sliderNav = (manual) => {
     setActiveSlide(manual);
   };
 
+  // Función para manejar el cambio de orientación de pantalla
+  const handleOrientationChange = () => {
+    setOrientation(window.orientation);
+  };
+
+  useEffect(() => {
+    // Agregar un event listener para detectar cambios de orientación
+    window.addEventListener('orientationchange', handleOrientationChange);
+
+    return () => {
+      // Limpia el event listener cuando el componente se desmonta
+      window.removeEventListener('orientationchange', handleOrientationChange);
+    };
+  }, []);
+
   // Cambiar al siguiente slide automáticamente cada 7 segundos
   useInterval(() => {
-    const nextSlide = (activeSlide + 1) % 5; // Suponiendo que tienes 5 slides
+    const nextSlide = (activeSlide + 1) % 5;
     setActiveSlide(nextSlide);
-  }, 7000); // Cambiar cada 7 segundos
+  }, 7000);
 
   return (
     <div className="container">
@@ -43,7 +61,7 @@ function Hero() {
           <video
             key={index}
             className={`video-slide ${index === activeSlide ? 'active' : ''}`}
-            src={`/${index}.mp4`}
+            src={`/${isMobile ? `video-movil-${orientation === 0 ? 'vertical' : 'horizontal'}-${index}` : `${index}`}.mp4`}
             autoPlay
             muted
             loop
@@ -53,7 +71,7 @@ function Hero() {
         {[0, 1, 2, 3, 4].map((index) => (
           <div key={index} className={`content ${index === activeSlide ? 'active' : ''}`}>
             
-		        <h1>
+            <h1>
               {index === 0 && 'Profesionales'}
               {index === 1 && 'Hogar'}
               {index === 2 && 'Reformas'}
@@ -79,7 +97,7 @@ function Hero() {
         ))}
 
         <div className="media-icons">
-
+          
           <a href="https://www.facebook.com/amanoreformas/">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
@@ -89,7 +107,7 @@ function Hero() {
           <a href="https://www.twitter.com/amanoryd/">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          
+
         </div>
 
         <div className="slider-navigation">

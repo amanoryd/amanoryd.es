@@ -1,4 +1,5 @@
-@media (max-width: 1040px){
+/* breakpoints para regular screen size */
+@media (max-width: 1024px){
     header{
         padding: 12px 20px;
     }
@@ -60,11 +61,30 @@
         background-position: center;
         transition: 0.3s ease;
     }
+
+    .home .content h1{
+        font-size: 2.5em;
+        line-height: 50px;
+        /* letter-spacing: 0; */
+    }
 }
 
-@media (max-width: 560px){
+/* breakpoints para medium screen size */
+@media (max-width: 768px){
+    header a img {
+        width: 150px;
+    }
+}
+
+/* breakpoints para small screen size */
+@media (max-width: 480px){
     .home .content h1{
-        font-size: 3em;
-        line-height: 60px;
+        font-size: 2.3em;
+        line-height: 45px;
+        letter-spacing: 0;
+    }
+
+    section {
+        padding: 0 15px;
     }
 }

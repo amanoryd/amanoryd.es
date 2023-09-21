@@ -1,0 +1,27 @@
+.container1 {
+    margin: 5% 0 5% 0;
+    display: inline-flex;
+}
+
+.left1 {
+    margin: 0 5% 0 10%;
+    width: 45%;
+}
+
+.container1 p {
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.right1 {
+    margin: 0 10% 0 5%;
+    width: 45%;
+}
+
+.l1-1 {
+    margin-bottom: 15%;
+}
+
+.r1-1 img{
+    margin: 5% 0 5% 0;
+}

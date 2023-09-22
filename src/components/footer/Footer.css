@@ -1,0 +1,20 @@
+.footer {
+    background-color: var(--main);
+    color: white;
+}
+
+.info1-1 {
+    width: 100%;
+    display: inline-flex;
+    align-items: flex-start;
+    margin: 3% 0 3% 0;
+}
+
+.bloque {
+    width: 25%;
+    padding: 0 3% 0 3%;
+}
+
+ul li {
+    text-decoration: none;
+}

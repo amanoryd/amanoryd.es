@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="info1-1">
         <div className="bloque">
-          <img src="./logov2.svg" alt="Amano, Reformas y Decoración" width={'250px'}/>
+          <img src="./logov2.svg" alt="Amano, Reformas y Decoración" width={'100%'}/>
           <p>
             Comprometidos con la calidad a través de la innovación de productos
             y soluciones.
@@ -15,7 +15,7 @@ function Footer() {
         </div>
 
         <div className="bloque">
-          <h1>Estamos en</h1>
+          <h2>Estamos en</h2>
           <p>Calle Historias de la radio 3, Portal 4 (local), 28018 Madrid</p>
           <h2>
             91 785 77 16
@@ -25,25 +25,25 @@ function Footer() {
         </div>
 
         <div className="bloque">
-          <h1>Enlaces</h1>
+          <h2>Enlaces</h2>
           <ul>
             <li>
-              <a href="">Inicio</a>
+              <a href="./index.html">Inicio</a>
             </li>
             <li>
-              <a href="">Proyectos</a>
+              <a href="#">Proyectos</a>
             </li>
             <li>
-              <a href="">Blog</a>
+              <a href="#">Blog</a>
             </li>
             <li>
-              <a href="">Contacto</a>
+              <a href="#">Contacto</a>
             </li>
           </ul>
         </div>
 
         <div className="bloque">
-          <h1>Horario</h1>
+          <h2>Horario</h2>
           <span>
             Lunes a Viernes
             <br />

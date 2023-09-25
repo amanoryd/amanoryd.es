@@ -1,17 +1,38 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
   return (
     <div className="footer">
       <div className="info1-1">
         <div className="bloque">
-          <img src="./logov2.svg" alt="Amano, Reformas y Decoración" width={'75%'}/>
+          <img
+            src="./logov2.svg"
+            alt="Amano, Reformas y Decoración"
+            width={"75%"}
+          />
           <p>
             Comprometidos con la calidad a través de la innovación de productos
             y soluciones.
           </p>
-          <span>iconos aquí</span>
+
+            <span className="media-icons">
+              <a href="https://www.facebook.com/amanoreformas/">
+                <FontAwesomeIcon icon={faFacebookF} />
+              </a>
+              <a href="https://www.instagram.com/amano_reformas/">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="https://www.twitter.com/amanoryd/">
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+            </span>
         </div>
 
         <div className="bloque">

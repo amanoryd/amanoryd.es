@@ -25,12 +25,15 @@ function Footer() {
             <span className="media-icons">
               <a href="https://www.facebook.com/amanoreformas/">
                 <FontAwesomeIcon icon={faFacebookF} />
+                 {/* Facebook */}
               </a>
               <a href="https://www.instagram.com/amano_reformas/">
                 <FontAwesomeIcon icon={faInstagram} />
+                {/* Instagram */}
               </a>
               <a href="https://www.twitter.com/amanoryd/">
                 <FontAwesomeIcon icon={faTwitter} />
+                {/* Twitter */}
               </a>
             </span>
         </div>

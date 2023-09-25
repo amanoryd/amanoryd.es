@@ -1,18 +1,35 @@
 .footer {
     background-color: var(--main);
     color: white;
+    font-weight: 200;
 }
 
 .info1-1 {
     width: 100%;
     display: inline-flex;
     align-items: flex-start;
-    margin: 3% 0 3% 0;
+    padding: 3% 0 3% 0;
 }
 
 .footer .bloque {
     width: 25%;
-    padding: 0 5% 0 5%;
+}
+
+.footer .bloque:first-child {
+    margin-left: 5%;
+}
+
+.footer .bloque:last-child {
+    margin-right: 5%;
+
+}
+
+.footer .bloque:nth-child(n+2):nth-child(-n+3) {
+    margin: 0 3% 0 3%;
+}
+
+.footer .bloque img {
+    margin-bottom: 10%;
 }
 
 ul li {
@@ -22,4 +39,8 @@ ul li {
 ul li a {
     text-decoration: none;
     color: white;
+}
+
+.footer .copyright {
+    padding: 0 0 3% 5%;
 }

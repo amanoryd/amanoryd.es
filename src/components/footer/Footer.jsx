@@ -54,7 +54,7 @@ function Footer() {
         </div>
       </div>
 
-      <div>
+      <div className="copyright">
         <p>Copyright © 2023 Amano, Reformas y Decoración</p>
       </div>
     </div>

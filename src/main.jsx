@@ -5,6 +5,9 @@ import ReactDOM from 'react-dom/client';
 import Nav from './components/nav/Nav';
 import Hero from './components/hero/Hero';
 import Section1 from './components/section1/Section1';
+import Profesionales from './components/profesionales/Profesionales';
+import Blog from './components/blog/Blog';
+import Proyectos from './components/proyectos/Proyectos';
 import Footer from './components/footer/Footer';
 
 import './index.css';
@@ -15,6 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Nav />
     <Hero />
     <Section1 />
+    <Profesionales />
+    <Blog />
+    <Proyectos />
     <Footer />
   </React.StrictMode>,
 );

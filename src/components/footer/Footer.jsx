@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="info1-1">
         <div className="bloque">
-          <img src="./logov2.svg" alt="Amano, Reformas y Decoración" width={'100%'}/>
+          <img src="./logov2.svg" alt="Amano, Reformas y Decoración" width={'75%'}/>
           <p>
             Comprometidos con la calidad a través de la innovación de productos
             y soluciones.

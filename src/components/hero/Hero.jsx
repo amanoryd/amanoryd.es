@@ -86,9 +86,9 @@ function Hero() {
             </h1>
             <div className='container-text'>
               <p>
-                {index === 0 && 'Calidad, confianza y resultados excepcionales. Descubre por qué somos la elección número uno para reformas en Madrid.'}
+                {index === 0 && 'Calidad, confianza y resultados excepcionales.'}
                 {index === 1 && 'Creamos espacios que inspiran y mejoran la vida de nuestros clientes.'}
-                {index === 2 && 'Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad. Nuestro enfoque personalizado garantiza que tu espacio refleje tu estilo y necesidades.'}
+                {index === 2 && 'Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad.'}
                 {index === 3 && 'Déjanos hacer realidad tus ideas y crear el hogar de tus sueños.'}
                 {index === 4 && ''}
               </p>

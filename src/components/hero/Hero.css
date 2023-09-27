@@ -48,19 +48,24 @@ section{
 .home .content h1 span{
     color: var(--low-tone);
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 900;
     text-shadow: 3px 3px 10px var(--mid-tone);
 }
 
+.container-text {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
 .home .content p{
+    padding: 0 20px 0 20px;
     font-size: 1.5rem;
     margin-bottom: 65px;
-    color: var(--color-uno);
-    background: #666666;
+    color: transparent;
+    background: #ffffff;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
-    text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+    text-shadow: 0px 2px 2px rgb(255, 255, 255);
 }
 
 .home .content a{

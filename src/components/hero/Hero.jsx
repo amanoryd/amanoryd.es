@@ -84,13 +84,15 @@ function Hero() {
               <span>{index === 3 && 'Vida Mejorada.'}</span>
               <span>{index === 4 && 'Amano, reformas y decoración.'}</span>
             </h1>
-            <p>
-              {index === 0 && 'Calidad, confianza y resultados excepcionales. Descubre por qué somos la elección número uno para reformas en Madrid.'}
-              {index === 1 && 'Creamos espacios que inspiran y mejoran la vida de nuestros clientes.'}
-              {index === 2 && 'Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad. Nuestro enfoque personalizado garantiza que tu espacio refleje tu estilo y necesidades.'}
-              {index === 3 && 'Déjanos hacer realidad tus ideas y crear el hogar de tus sueños.'}
-              {index === 4 && ''}
-            </p>
+            <div className='container-text'>
+              <p>
+                {index === 0 && 'Calidad, confianza y resultados excepcionales. Descubre por qué somos la elección número uno para reformas en Madrid.'}
+                {index === 1 && 'Creamos espacios que inspiran y mejoran la vida de nuestros clientes.'}
+                {index === 2 && 'Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad. Nuestro enfoque personalizado garantiza que tu espacio refleje tu estilo y necesidades.'}
+                {index === 3 && 'Déjanos hacer realidad tus ideas y crear el hogar de tus sueños.'}
+                {index === 4 && ''}
+              </p>
+            </div>
             <a href="#">Read More</a>
 
           </div>

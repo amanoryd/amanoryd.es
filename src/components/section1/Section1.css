@@ -1,6 +1,7 @@
 .container1 {
-    margin: 5% 0 5% 0;
+    padding: 5% 0 5% 0;
     display: inline-flex;
+    background-color: var(--mid-tone);
 }
 
 .left1 {

@@ -104,4 +104,25 @@
         font-size: 0.9em;
         font-weight: 400;
     }
+
+    .container1 {
+        display: block;
+        padding: 20% 0 20% 0;
+    }
+
+    .left1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 10% 0 10%;
+    }
+
+    .container1 p {
+        font-size: 1em;
+    }
+
+    .right1 {
+        width: 100%;
+        margin: 0;
+        padding: 0 10% 0 10%;
+    }
 }

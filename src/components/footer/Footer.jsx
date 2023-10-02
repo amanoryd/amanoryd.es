@@ -9,7 +9,7 @@ import {
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="info1-1">
         <div className="bloque">
           <img
@@ -81,7 +81,7 @@ function Footer() {
       <div className="copyright">
         <p>Copyright © 2023 Amano, Reformas y Decoración</p>
       </div>
-    </div>
+    </footer>
   );
 }
 

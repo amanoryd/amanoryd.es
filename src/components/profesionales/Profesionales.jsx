@@ -5,7 +5,11 @@ function Profesionales() {
   return (
     <div className='profesionales1'>
         <h1>Profesionales de la transformación</h1>
-        <video src="../cocina/cocina-borrador-web1.mp4" autoPlay muted loop width={'40%'}></video>
+        <p>
+          Creamos espacios que inspiran y mejoran la vida de nuestros clientes.
+          No te conformes con menos: elige a los expertos en reformas para dar 
+          vida a tu hogar
+        </p>
     </div>
   )
 }

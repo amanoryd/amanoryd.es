@@ -162,5 +162,16 @@
   /* Sección Profesionales */
   .profesionales1 {
     text-align: center;
+    height: 400px;
+  }
+
+  .profesionales1 h1 {
+    font-size: 2em;
+  }
+
+  .profesionales1 p {
+    font-size: 1em;
+    width: 90%;
+    padding: 8% 0;
   }
 }

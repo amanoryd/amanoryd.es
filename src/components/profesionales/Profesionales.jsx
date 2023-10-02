@@ -10,6 +10,12 @@ function Profesionales() {
           No te conformes con menos: elige a los expertos en reformas para dar 
           vida a tu hogar
         </p>
+
+        {/* los estilos de este botón estan en el css 'Hero.css' */}
+        <a className='button-a1' href="https://www.instagram.com/amano_reformas/">
+          Síguenos en Instagram
+        </a>
+
     </div>
   )
 }

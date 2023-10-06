@@ -23,3 +23,15 @@
 	width: 50%;
 	padding: 2% 0;
 }
+
+/* animación activada con el scroll */
+.profesionales1 h1, p, a {
+  view-timeline-name: --fade-y;
+  view-timeline-axis: block;
+
+  animation-timeline: --fade-y;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+  
+}

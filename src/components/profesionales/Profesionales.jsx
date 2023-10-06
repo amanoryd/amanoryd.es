@@ -15,7 +15,6 @@ function Profesionales() {
         <a className='button-a1' href="https://www.instagram.com/amano_reformas/">
           Síguenos en Instagram
         </a>
-
     </div>
   )
 }

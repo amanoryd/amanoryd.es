@@ -8,7 +8,6 @@
     width: 100%;
     display: inline-flex;
     align-items: flex-start;
-    padding: 3% 0 3% 0;
 }
 
 .footer .bloque {
@@ -16,7 +15,7 @@
 }
 
 .footer .bloque:first-child {
-    padding-left: 5%;
+    padding: 5% 0 0 5%;
 }
 
 .footer .bloque img {

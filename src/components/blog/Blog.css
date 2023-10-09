@@ -20,3 +20,17 @@
   z-index: -1;
   background: rgba(26, 26, 26, 0.72);
 }
+
+.blog-container {
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+.blog-container h4, h1 {
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.blog-container p {
+  font-weight: 400;
+}

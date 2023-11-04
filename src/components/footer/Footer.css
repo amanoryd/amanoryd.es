@@ -1,4 +1,6 @@
 .footer {
+    margin: 0;
+    float: none;
     background-color: var(--complement1);
     color: white;
     font-weight: 200;

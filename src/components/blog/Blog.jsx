@@ -12,6 +12,10 @@ function Blog() {
     return new Date(fecha).toLocaleDateString('es-ES', options);
   };
 
+
+  // Filtrar las últimas 6 entradas
+  const latestPosts = data && data.slice(0, 6);
+
   return (
     <div className="blog1">
       <div className="blog-container">
@@ -23,26 +27,22 @@ function Blog() {
         </p>
       </div>
 
-      <br />
-      <br />
-
       <div>
 
         <div>
-          <ul>
-            {data &&
-              data.map((post) => 
-                <div key={post.id}>
+          <div className="blog-flex">
+          {latestPosts &&
+              latestPosts.map((post) => (
+                <span className="blog-items" key={post.id}>
                   <img src={post.uagb_featured_image_src.medium[0]} alt="" />
-                  <div>{post.title.rendered}</div>
-                  <div>{post.yoast_head_json.description}</div>
-                  <div>{post.yoast_head_json.author}</div>
-                  <div>{formatFecha(post.date)}</div>
+                  <h2>{post.title.rendered}</h2>
+                  <p>{post.yoast_head_json.description}</p>
+                  <h5>{post.yoast_head_json.author}</h5>
+                  <h6>{formatFecha(post.date)}</h6>
                   <br /><br />
-                </div>
-              )
-            }
-          </ul>
+                </span>
+              ))}
+          </div>
         </div>
 
       </div>

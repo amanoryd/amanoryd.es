@@ -7,7 +7,7 @@
   background-image: url(../../../public/blog_background_0001v3.webp);
   background-size: cover;
   background-position: center;
-  padding: 15% 0 15% 0;
+  padding-top: 15%;
   color: white;
   isolation: isolate;
   position: relative;
@@ -21,9 +21,18 @@
   background: rgba(26, 26, 26, 0.72);
 }
 
-.blog-container {
-  width: 100%;
-  padding: 0 10% 0 10%;
+.blog-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 10% 5%;
+  column-gap: 5%;
+}
+
+.blog-items {
+  /* display: grid; */
+  width: 350px;
 }
 
 .blog-container h4, h1 {

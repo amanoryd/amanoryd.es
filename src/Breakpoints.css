@@ -175,4 +175,9 @@
     width: 90%;
     padding: 8% 0;
   }
+
+  /* BLOG */
+  .blog-container {
+    margin: 0 5%;
+  }
 }

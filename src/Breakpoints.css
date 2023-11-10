@@ -1,9 +1,9 @@
-/* breakpoints para regular screen size */
+/* BREAKPOINTS para regular screen size */
 @media (max-width: 1024px) {
   header {
     padding: 12px 20px;
   }
-  section {
+  section .home {
     padding: 100px 20px;
   }
   .home .media-icons {
@@ -70,14 +70,14 @@
   }
 }
 
-/* breakpoints para medium screen size */
+/* BREAKPOINTS para medium screen size */
 @media (max-width: 768px) {
   header a img {
     width: 150px;
   }
 }
 
-/* breakpoints para small screen size */
+/* BREAKPOINTS para small screen size */
 @media (max-width: 480px) {
   .home .content h1 {
     font-size: 2.3em;
@@ -96,7 +96,7 @@
     margin-bottom: 50px;
   }
 
-  section {
+  section .home {
     padding: 0 15px;
   }
 
@@ -106,7 +106,7 @@
     font-weight: 400;
   }
 
-  /* Section1 */
+  /* SECTION-1 */
   .container1 {
     display: block;
     padding: 20% 0 20% 0;
@@ -128,8 +128,31 @@
     padding: 0 10% 0 10%;
   }
 
-  /* footer */
+  /* SECCION PROFESIONALES */
+  .profesionales1 {
+    text-align: center;
+    height: 680px;
+  }
 
+  .profesionales1 h1 {
+    font-size: 2em;
+    letter-spacing: 4px;
+  }
+
+  .profesionales1 p {
+    font-size: 1em;
+    width: 90%;
+    padding: 15% 0;
+  }
+
+  /* BLOG */
+  .blog-wrap-top {
+    padding: 5%;
+  }
+
+  /* PROYECTOS */
+
+  /* FOOTER */
   .info1-1 {
     display: flex;
     flex-direction: column;
@@ -159,25 +182,4 @@
 		text-align: center;
 		font-size: 0.9em;
 	}
-
-  /* Sección Profesionales */
-  .profesionales1 {
-    text-align: center;
-    height: 400px;
-  }
-
-  .profesionales1 h1 {
-    font-size: 2em;
-  }
-
-  .profesionales1 p {
-    font-size: 1em;
-    width: 90%;
-    padding: 8% 0;
-  }
-
-  /* BLOG */
-  .blog-container {
-    margin: 0 5%;
-  }
 }

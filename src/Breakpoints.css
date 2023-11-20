@@ -1,17 +1,21 @@
 /* BREAKPOINTS para regular screen size */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   header {
     padding: 12px 20px;
   }
-  section .home {
+
+  .mainHero .home {
     padding: 100px 20px;
   }
+
   .home .media-icons {
     right: 15px;
   }
+
   header .navigation {
     display: none;
   }
+
   header .navigation.active {
     position: fixed;
     width: 100%;
@@ -29,10 +33,12 @@
     font-size: 1.2em;
     margin: 20px;
   }
+
   header .navigation .navigation-items a:before {
     background: #222;
     height: 5px;
   }
+
   header .navigation .navigation-items {
     background: var(--mid-tone);
     width: 600px;
@@ -45,6 +51,7 @@
     border-radius: 15px;
     box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
   }
+
   .menu-btn {
     background: url(../public/menu.png) no-repeat;
     background-size: 30px;
@@ -55,6 +62,7 @@
     transition: 0.3s ease;
     z-index: 9999;
   }
+  
   .menu-btn.active {
     z-index: 9999;
     background: url(../public/close.png) no-repeat;
@@ -71,14 +79,14 @@
 }
 
 /* BREAKPOINTS para medium screen size */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header a img {
     width: 150px;
   }
 }
 
 /* BREAKPOINTS para small screen size */
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .home .content h1 {
     font-size: 2.3em;
     line-height: 45px;
@@ -96,7 +104,7 @@
     margin-bottom: 50px;
   }
 
-  section .home {
+  .mainHero .home {
     padding: 0 15px;
   }
 

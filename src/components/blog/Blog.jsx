@@ -13,7 +13,7 @@ function Blog() {
   };
 
   // Determinar la cantidad de posts a mostrar en función del ancho de la ventana
-  const postsToShow = window.innerWidth <= 480 ? 5 : 8;
+  const postsToShow = window.innerWidth <= 480 ? 4 : 6;
 
   // Filtrar las últimas entradas
   const latestPosts = data && data.slice(0, postsToShow);

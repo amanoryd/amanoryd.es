@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect, useRef } from 'react';
 import './Hero.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -65,7 +66,6 @@ function Hero() {
             autoPlay
             muted
             loop
-            fetchpriority="high"
           ></video>
         ))}
 

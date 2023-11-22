@@ -19,7 +19,7 @@ function Blog() {
   const latestPosts = data && data.slice(0, postsToShow);
 
   return (
-    <section className="blog-container">
+    <section className="blog-container" id="blog">
       <div className="blog-wrap-top">
         <h4>BLOG</h4>
         <h1>Últimas entradas</h1>

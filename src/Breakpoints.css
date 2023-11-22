@@ -1,3 +1,7 @@
+@media screen and (max-width: 1200px){
+  /* comment */
+}
+
 /* BREAKPOINTS para regular screen size */
 @media screen and (max-width: 1024px) {
   header {
@@ -91,12 +95,13 @@
     font-size: 2.3em;
     line-height: 45px;
     letter-spacing: 0;
-    font-weight: 400;
+    font-weight: 900;
   }
 
   .home .content h1 span {
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 700;
+    color: var(--complement2);
   }
 
   .home .content p {

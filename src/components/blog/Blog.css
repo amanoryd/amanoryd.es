@@ -7,7 +7,7 @@
   background-image: url(../../../public/blog_background_0001v3.webp);
   background-size: cover;
   background-position: center;
-  padding-top: 15%;
+  padding-top: 5%;
   color: white;
   isolation: isolate;
   position: relative;
@@ -45,15 +45,15 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
   max-width: 100%;
-  margin: 10% 5%;
-  column-gap: 5%;
+  margin: 5%;
 }
 
 .blog-item {
-  /* display: grid; */
   width: 350px;
-  margin: 5% 0;
+  margin: 3% 0;
   border-radius: 0.6em;
   background: rgba(115, 106, 95, 0.95);
   overflow: hidden;

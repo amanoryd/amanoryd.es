@@ -55,10 +55,10 @@ function Footer() {
               <a href="./index.html">Inicio</a>
             </li>
             <li>
-              <a href="#">Proyectos</a>
+              <a href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#blog">Blog</a>
             </li>
             <li>
               <a href="#">Contacto</a>

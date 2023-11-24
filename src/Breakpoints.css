@@ -1,5 +1,17 @@
 @media screen and (max-width: 1200px){
-  /* comment */
+  .blog-wrap-bottom {
+    padding: 0;
+  }
+
+  .blog-article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: space-around;
+    margin: 5%;
+    max-width: 100%;
+  }
 }
 
 /* BREAKPOINTS para regular screen size */

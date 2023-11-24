@@ -23,7 +23,7 @@
 
 .blog-wrap-top {
   width: 100%;
-  padding: 0 5%;
+  padding: 0 10%;
 }
 
 .blog-wrap-top
@@ -41,14 +41,24 @@ h1 {
   font-weight: 400;
 }
 
+.blog-wrap-bottom {
+  padding: 5% 0;
+}
+
 .blog-article {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   align-content: space-around;
+  margin: 5%; */
   max-width: 100%;
-  margin: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 25px;
+  height: auto;
 }
 
 .blog-item {

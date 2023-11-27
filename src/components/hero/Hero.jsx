@@ -56,8 +56,8 @@ function Hero() {
   }, 7000);
 
   return (
-    <div className="mainHero">
-      <section className="home">
+    <section className="mainHero">
+      <div className="home">
         {[0, 1, 2, 3, 4].map((index) => (
           <video
             key={index}
@@ -122,8 +122,8 @@ function Hero() {
             ></div>
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

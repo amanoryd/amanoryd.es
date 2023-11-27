@@ -26,9 +26,8 @@
   padding: 0 10%;
 }
 
-.blog-wrap-top
-h4,
-h1 {
+.blog-wrap-top h4,
+.blog-wrap-top h1 {
   font-weight: 600;
   letter-spacing: 5px;
 }
@@ -39,6 +38,7 @@ h1 {
 
 .blog-wrap-top p {
   font-weight: 400;
+  text-wrap: balance;
 }
 
 .blog-wrap-bottom {
@@ -80,4 +80,5 @@ h1 {
 
 .blog-item p {
   padding: 5% 0;
+  font-weight: 300;
 }

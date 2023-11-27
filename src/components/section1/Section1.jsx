@@ -3,7 +3,7 @@ import "./Section1.css";
 
 function Section1() {
   return (
-    <div className="container1">
+    <section className="container1">
       <div className="left1">
         <div className="l1-1">
           <h1>Confianza</h1>
@@ -55,7 +55,7 @@ function Section1() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

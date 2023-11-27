@@ -12,6 +12,10 @@
     margin: 5%;
     max-width: 100%;
   }
+
+  .proyectos-wrap-top {
+    flex-wrap: wrap;
+  }
 }
 
 /* BREAKPOINTS para regular screen size */
@@ -117,16 +121,24 @@
   .footer .bloque:first-child {
     padding-left: 0;
 		width: 95%;
+    font-size: 1.5em;
+    font-weight: 400;
   }
 
 	.footer .bloque:nth-child(n+2):nth-child(-n+3) {
 		padding: 5% 0;
 		width: 80%;
+    font-size: 1.5em;
 	}
+
+  .footer .bloque h2:nth-child(n+2) {
+    font-size: 2.5em;
+  }
 
 	.footer .bloque:last-child {
 		padding: 5% 0;
 		width: 95%;
+    font-size: 1.5em;
 	}
 
 	.footer .copyright {
@@ -211,4 +223,21 @@
   }
 
   /* PROYECTOS */
+
+  /* FOOTER */
+  .footer .bloque:first-child {
+    width: 90%;
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+	.footer .bloque:nth-child(n+2):nth-child(-n+3) {
+    font-size: 1em;
+	}
+
+	.footer .bloque:last-child {
+		padding: 5% 0;
+		width: 95%;
+    font-size: 1em;
+	}
 }

@@ -62,10 +62,11 @@ function Hero() {
           <video
             key={index}
             className={`video-slide ${index === activeSlide ? 'active' : ''}`}
-            src={`/${isMobile ? `video-movil-${orientation === 0 ? 'vertical' : 'horizontal'}-${index}.webm` : `${index}.mp4`}`}
+            src={`/${isMobile ? `video-movil-${orientation === 0 ? 'vertical' : 'horizontal'}-${index}.mp4` : `${index}.mp4`}`}
             autoPlay
             muted
             loop
+            playsInline
           ></video>
         ))}
 

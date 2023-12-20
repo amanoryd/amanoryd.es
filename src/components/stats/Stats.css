@@ -1,7 +1,7 @@
 .stats-container {
   width: 100%;
   padding: 10% 0;
-  background-image: url(./fondo-madera-natural.jpg);
+  background-image: url(../../../public/fondo-madera-natural.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

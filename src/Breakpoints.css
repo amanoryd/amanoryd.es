@@ -149,7 +149,7 @@
     padding: 10% 0;
   }
 
-  section .stats-container div, div:nth-child(even) {
+  .stats-container div div:nth-child(even) {
     padding: 10% 0;
   }
 

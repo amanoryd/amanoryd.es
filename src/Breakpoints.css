@@ -143,6 +143,16 @@
     padding: 0 10% 0 10%;
   }
 
+  /* STATS */
+  .stats-wrap {
+    flex-direction: column;
+    padding: 10% 0;
+  }
+
+  section .stats-container div, div:nth-child(even) {
+    padding: 10% 0;
+  }
+
   /* FOOTER */
   .footer .bloque img {
     width: 50%;

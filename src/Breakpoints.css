@@ -143,6 +143,17 @@
     padding: 0 10% 0 10%;
   }
 
+  /* PROYECTOS */
+  .proyectos-container h1 {
+    font-size: 2.5rem;
+    padding: 5% 0;
+  }
+
+  .proyectos-wrapper {
+    flex-direction: column;
+    padding: 5% 10%;
+  }
+
   /* STATS */
   .stats-wrap {
     flex-direction: column;

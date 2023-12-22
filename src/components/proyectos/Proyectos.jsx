@@ -17,7 +17,7 @@ function Proyectos() {
             <img src="./proyectos/1-1/render-cocina-1-1-0003.jpg" alt="" />
           </div>
         </div>
-        <div className="parent" style={{margin: "10% 0"}}>
+        <div className="parent" style={{margin: "8% 0"}}>
         <div className="div1">
             <img src="./proyectos/1-1/render-cocina-1-1-0001.jpg" alt="" />
           </div>

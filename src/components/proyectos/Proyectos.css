@@ -14,12 +14,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 0 5%;
   gap: 5%;
-}
-
-.proyectos-wrapper>div {
-  /* border: 10px solid green; */
 }
 
 .parent {

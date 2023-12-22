@@ -10,6 +10,8 @@ import Profesionales from './components/profesionales/Profesionales';
 import Blog from './components/blog/Blog';
 import Proyectos from './components/proyectos/Proyectos';
 import Stats from './components/stats/Stats';
+import Proveedores from './components/proveedores/Proveedores';
+import Testimonios from './components/testimonios/Testimonios';
 import Footer from './components/footer/Footer';
 
 import './index.css';
@@ -25,6 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Blog />
     <Proyectos />
     <Stats />
+    <Proveedores />
+    <Testimonios />
     <Footer />
   </React.StrictMode>,
 );

@@ -14,10 +14,32 @@ const Stats = () => {
       >
         <div className="stats-wrap">
           <div>
+            <img src="./recurso-5boton.svg" alt="" />
+
             {counterState && (
-              <CountUp start={0} end={100} duration={3} suffix="%" />
+              <>
+                <svg id="projects" viewBox="0 0 380 380">
+                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                </svg>
+                
+                <CountUp
+                  start={0}
+                  end={100}
+                  duration={3}
+                  suffix="%"
+                  style={{
+                    position: "relative",
+                    zIndex: "5",
+                  }}
+                />
+              </>
             )}
-            <p>
+            <p
+              style={{
+                position: "relative",
+                zIndex: "5",
+              }}
+            >
               Proyectos
               <br />
               finalizados
@@ -25,16 +47,33 @@ const Stats = () => {
           </div>
 
           <div>
+            <img src="./recurso-5boton.svg" alt="" />
+
             {counterState && (
-              <CountUp
-                start={0}
-                end={100}
-                duration={3.5}
-                suffix="%"
-                delay={0.7}
-              />
+              <>
+                <svg id="clients" viewBox="0 0 380 380">
+                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                </svg>
+
+                <CountUp
+                  start={0}
+                  end={100}
+                  duration={3.5}
+                  suffix="%"
+                  delay={0.7}
+                  style={{
+                    position: "relative",
+                    zIndex: "5",
+                  }}
+                />
+              </>
             )}
-            <p>
+            <p
+              style={{
+                position: "relative",
+                zIndex: "5",
+              }}
+            >
               Clientes
               <br />
               satsfechos
@@ -42,16 +81,33 @@ const Stats = () => {
           </div>
 
           <div>
+            <img src="./recurso-5boton.svg" alt="" />
+
             {counterState && (
-              <CountUp 
-								start={0} 
-								end={100} 
-								duration={4} 
-								suffix="%" 
-								delay={1} 
-							/>
+              <>
+                <svg id="design" viewBox="0 0 380 380">
+                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                </svg>
+
+                <CountUp
+                start={0}
+                end={100}
+                duration={4}
+                suffix="%"
+                delay={1}
+                style={{
+                  position: "relative",
+                  zIndex: "5",
+                }}
+              />
+              </>
             )}
-            <p>
+            <p
+              style={{
+                position: "relative",
+                zIndex: "5",
+              }}
+            >
               Diseño
               <br />
               3D

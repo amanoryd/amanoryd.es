@@ -16,6 +16,7 @@ import Footer from './components/footer/Footer';
 
 import './index.css';
 import './Breakpoints.css';
+import './colorPalette.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

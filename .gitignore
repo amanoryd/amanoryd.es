@@ -27,3 +27,7 @@ App.jsx
 
 # Videos originales sin compresion
 original*.mp4
+public/recurso-4boton.svg
+public/recurso-unico-blanco.svg
+public/recurso-unico.svg
+src/animations.js

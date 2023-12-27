@@ -3,11 +3,8 @@ import { useFetch } from "../../useFetch";
 import "./Blog.css";
 
 function Blog() {
-  const apiToken = process.env.REACT_APP_API_TOKEN;
-  const apiUrl = `https://raw.githubusercontent.com/amanoryd/amanoryd.es/main/src/components/blog/api_post_WPrecord.json?token=${apiToken}`;  
-
   // URL Origen con la info del Blog en JSON.
-  const { data } = useFetch(apiUrl);
+  const { data } = useFetch("https://amanoryd.es/wp-json/wp/v2/posts");
 
   // función para cambiar el formato de la fecha que viene del JSON.
   const formatFecha = (fecha) => {

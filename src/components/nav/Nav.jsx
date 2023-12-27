@@ -21,9 +21,9 @@ function Nav() {
       <div className={`menu-btn ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
         <div className={`navigation ${menuOpen ? "active" : ""}`}>
           <div className="navigation-items">
-            <a href="./index.html">Inicio</a>
+            <a href="/">Inicio</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="#blog">Blog</a>
+            <a href="/blog">Blog</a>
             <a href="#">Contacto</a>
             <a href="#">WhatsApp</a>
               </div>

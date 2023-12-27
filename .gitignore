@@ -31,3 +31,6 @@ public/recurso-4boton.svg
 public/recurso-unico-blanco.svg
 public/recurso-unico.svg
 src/animations.js
+
+# Local Netlify folder
+.netlify

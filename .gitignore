@@ -34,3 +34,4 @@ src/animations.js
 
 # Local Netlify folder
 .netlify
+.env

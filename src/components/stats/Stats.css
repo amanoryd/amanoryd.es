@@ -1,9 +1,14 @@
 .stats-container {
   width: 100%;
+  /* height: 45vh; */
   padding: 10% 0;
   background-image: url(../../../public/fondo-madera-natural.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.stats-container>div {
+  margin: 5% 0;
 }
 
 .stats-wrap {
@@ -22,10 +27,11 @@
   text-align: center;
 	font-size: clamp(1.5rem, 1.5vw + 1rem, 2.5rem);
 	font-weight: 800;
+  text-shadow: 0 0 20px rgba(255,255,255,.5), 0 0 20px rgba(255,255,255,.5), 2px 2px 20px rgba(0,0,0,0);
 }
 
 .stats-container div p {
-  font-size: clamp(1rem, 2vw + 0.2rem, 1.5rem);
+  font-size: clamp(1rem, 2vw + 0.2rem, 3rem);
 	font-weight: 500;
   text-align: center;
 }
@@ -48,29 +54,33 @@
   transform: translate(-50%, -50%);
 }
 
-.stats-wrap svg circle {
+.circle_animated {
   fill: transparent;
-  stroke: #9b0f21;
+  stroke: none;
   stroke-width: 30;
-  stroke-dasharray: 1600;
-  stroke-dashoffset: 1600;
+  stroke-dasharray: 1100 1100;
   stroke-linecap: round;
 }
 
-#projects circle {
-  animation: stroke 3500ms steps(1600) forwards;
+#projects {
+  animation: stroke 2800ms ease-out forwards;
 }
 
-#clients circle {
-  animation: stroke 4000ms 700ms steps(1600) forwards;
+#clients {
+  animation: stroke 2800ms 500ms ease-out forwards;
 }
 
-#design circle {
-  animation: stroke 4500ms 1000ms steps(1600) forwards;
+#design {
+  animation: stroke 2800ms 1000ms ease-out forwards;
 }
 
 @keyframes stroke {
+  0% {
+    stroke-dasharray: 0 1100 ;
+    stroke: #73573600;
+  }
+
   100% {
-    stroke-dashoffset: 0;
+    stroke: #735736;
   }
 }

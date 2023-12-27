@@ -168,6 +168,11 @@
     font-size: clamp(2rem, 4vw + 0.5rem, 3rem);
   }
 
+  .stats-wrap div p {
+    /* line-height: 30px; */
+    font-size: clamp(1rem, 3.2vw + 0.3rem, 2.5rem);
+  }
+
   .stats-wrap svg {
     height: calc(90vw / 2);
     width: calc(90vw / 2);

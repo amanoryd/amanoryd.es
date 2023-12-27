@@ -13,15 +13,34 @@ const Stats = () => {
         onExit={() => setCounterState(false)}
       >
         <div className="stats-wrap">
+          {/* PROYECTOS FINALIZADOS */}
           <div>
             <img src="./recurso-5boton.svg" alt="" />
 
             {counterState && (
               <>
-                <svg id="projects" viewBox="0 0 380 380">
-                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 380 380"
+                >
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    fill="none"
+                    strokeWidth={30}
+                    stroke="#efefef"
+                  />
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    className="circle_animated"
+                    id="projects"
+                  />
                 </svg>
-                
+
                 <CountUp
                   start={0}
                   end={100}
@@ -46,21 +65,40 @@ const Stats = () => {
             </p>
           </div>
 
+          {/* CLIENTES SATISFECHOS */}
           <div>
             <img src="./recurso-5boton.svg" alt="" />
 
             {counterState && (
               <>
-                <svg id="clients" viewBox="0 0 380 380">
-                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 380 380"
+                >
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    fill="none"
+                    strokeWidth={30}
+                    stroke="#efefef"
+                  />
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    className="circle_animated"
+                    id="clients"
+                  />
                 </svg>
 
                 <CountUp
                   start={0}
                   end={100}
-                  duration={3.5}
+                  duration={3}
                   suffix="%"
-                  delay={0.7}
+                  delay={0.5}
                   style={{
                     position: "relative",
                     zIndex: "5",
@@ -80,26 +118,45 @@ const Stats = () => {
             </p>
           </div>
 
+          {/* DISEÑO 3D */}
           <div>
             <img src="./recurso-5boton.svg" alt="" />
 
             {counterState && (
               <>
-                <svg id="design" viewBox="0 0 380 380">
-                  <circle cx={190} cy={190} r={175} className="color1"></circle>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 380 380"
+                >
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    fill="none"
+                    strokeWidth={30}
+                    stroke="#efefef"
+                  />
+                  <circle
+                    cx={190}
+                    cy={190}
+                    r={175}
+                    className="circle_animated"
+                    id="design"
+                  />
                 </svg>
 
                 <CountUp
-                start={0}
-                end={100}
-                duration={4}
-                suffix="%"
-                delay={1}
-                style={{
-                  position: "relative",
-                  zIndex: "5",
-                }}
-              />
+                  start={0}
+                  end={100}
+                  duration={3}
+                  suffix="%"
+                  delay={1}
+                  style={{
+                    position: "relative",
+                    zIndex: "5",
+                  }}
+                />
               </>
             )}
             <p

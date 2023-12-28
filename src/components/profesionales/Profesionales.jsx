@@ -44,7 +44,7 @@ function Profesionales() {
                     rel="noopener noreferrer"
                     className="caption"
                   >
-                    <p>{post.caption.slice(0, 100)}</p>
+                    <p>{post.caption.slice(0, 100)}...</p>
                   </a>
                 </div>
               </div>
@@ -64,7 +64,7 @@ function Profesionales() {
                     rel="noopener noreferrer"
                     className="caption"
                   >
-                    <p>{post.caption.slice(0, 100)}</p>
+                    <p>{post.caption.slice(0, 100)}...</p>
                   </a>
                 </div>
               </div>
@@ -84,7 +84,7 @@ function Profesionales() {
                     rel="noopener noreferrer"
                     className="caption"
                   >
-                    <p>{post.caption.slice(0, 100)}</p>
+                    <p>{post.caption.slice(0, 100)}...</p>
                   </a>
                 </div>
               </div>

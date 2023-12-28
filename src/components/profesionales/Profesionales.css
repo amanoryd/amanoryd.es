@@ -21,10 +21,11 @@
 .profesionales1 p {
   font-size: 1.2em;
   font-weight: 300;
+  text-overflow: ellipsis;
   text-align: center;
   width: 60%;
   padding: 2% 0;
-  text-wrap: balance;
+  text-wrap: pretty;
 }
 
 /* animación activada con el scroll */
@@ -42,7 +43,8 @@
 
 #feed-container {
   margin-top: 5%;
-  max-width: 80%;
+  max-width: 1200px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   padding-bottom: 0px;

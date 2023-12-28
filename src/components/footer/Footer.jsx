@@ -52,13 +52,13 @@ function Footer() {
           <h2>Enlaces</h2>
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
               <a href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <a href="/blog">Blog</a>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
               <a href="#">Contacto</a>

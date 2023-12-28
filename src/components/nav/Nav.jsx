@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import './Nav.css'
 
 function Nav() {
@@ -21,9 +22,9 @@ function Nav() {
       <div className={`menu-btn ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>
         <div className={`navigation ${menuOpen ? "active" : ""}`}>
           <div className="navigation-items">
-            <a href="/">Inicio</a>
+            <Link to="/">Inicio</ Link>
             <a href="#proyectos">Proyectos</a>
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
             <a href="#">Contacto</a>
             <a href="#">WhatsApp</a>
               </div>

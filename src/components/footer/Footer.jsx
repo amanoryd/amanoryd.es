@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,6 +9,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+
+  const history = useNavigate();
+
+  const handleLinkClick = () => {
+    // Desplazar al top de la página
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="footer">
       <div className="info1-1">
@@ -53,13 +61,13 @@ function Footer() {
           <h2>Enlaces</h2>
           <ul>
             <li>
-              <Link to="/">Inicio</Link>
+              <Link to="/" onClick={handleLinkClick}>Inicio</Link>
             </li>
             <li>
               <a href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <Link to="/blog">Blog</Link>
+              <Link to="/blog" onClick={handleLinkClick}>Blog</Link>
             </li>
             <li>
               <a href="#">Contacto</a>

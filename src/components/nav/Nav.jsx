@@ -16,7 +16,7 @@ function Nav() {
     <>
 
     <header>
-      <a href="index.html" className="brand">
+      <a href="https://reformas.amanoryd.es" className="Amano, Reformas y Decoración">
         <img src="/logov2.svg" alt="Amano, Reformas y Decoración" width={180}/>
       </a>
       <div className={`menu-btn ${menuOpen ? "active" : ""}`} onClick={toggleMenu}>

@@ -21,4 +21,5 @@
   --shadow-color: hsl(var(--shadow-color-hsl) / var(--shadow-opacity));
   --shadow-lg: 0px 16px 24px var(--shadow-color),
     0px 2px 6px var(--shadow-color);
+  --gradient-complement: linear-gradient(90deg, rgba(138, 46, 64, 0.5) 0%, rgba(66, 109, 138, 0.5) 80%);
 }

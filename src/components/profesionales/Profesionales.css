@@ -31,7 +31,8 @@
 /* animación activada con el scroll */
 .profesionales1 h1,
 .profesionales1 p,
-.profesionales1 a {
+.profesionales1 a,
+#feed-container div {
   view-timeline-name: --fade-y;
   view-timeline-axis: block;
 
@@ -80,6 +81,18 @@
 }
 
 #feed-content img:hover .opacity-hover {
+  width: 100%;
+}
+
+#feed-content video {
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 77%;
+  position: relative;
+}
+
+#feed-content video:hover .opacity-hover {
   width: 100%;
 }
 

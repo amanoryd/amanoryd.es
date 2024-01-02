@@ -30,13 +30,23 @@ function Profesionales() {
 
       {/* HE DIVIDIDO EN TRES PARTES DIFERENTES LA CARGA DE LA API POR MOTIVOS DE MEJORAS VISUALES */}
 
-      {/* PRIMER ROW */}
       <div id="feed-container">
+        
+        {/* PRIMER ROW */}
         <div id="main-gallery">
           {jsonFormat &&
             jsonFormat.data.slice(0, 3).map((post) => (
               <div key={post.id} id="feed-content" className="overflow">
-                <img src={post.media_url} alt="Post" />
+                {post.media_url.includes(".mp4") ? (
+                  // Si la URL del medio contiene ".mp4", usa un elemento de video
+                  <video controls playsInline muted loop>
+                    <source src={post.media_url} type="video/mp4" />
+                    Tu navegador no admite el elemento de video.
+                  </video>
+                ) : (
+                  // Si no, usa un elemento de imagen
+                  <img src={post.media_url} alt="Post" />
+                )}
                 <div className="opacity-hover">
                   <a
                     href={post.permalink}
@@ -53,10 +63,19 @@ function Profesionales() {
 
         {/* SEGUNDO ROW */}
         <div id="main-gallery">
-          {jsonFormat &&
+        {jsonFormat &&
             jsonFormat.data.slice(3, 6).map((post) => (
               <div key={post.id} id="feed-content" className="overflow">
-                <img src={post.media_url} alt="Post" />
+                {post.media_url.includes(".mp4") ? (
+                  // Si la URL del medio contiene ".mp4", usa un elemento de video
+                  <video controls playsInline muted loop>
+                    <source src={post.media_url} type="video/mp4" />
+                    Tu navegador no admite el elemento de video.
+                  </video>
+                ) : (
+                  // Si no, usa un elemento de imagen
+                  <img src={post.media_url} alt="Post" />
+                )}
                 <div className="opacity-hover">
                   <a
                     href={post.permalink}
@@ -73,10 +92,19 @@ function Profesionales() {
 
         {/* TERCER ROW */}
         <div id="main-gallery">
-          {jsonFormat &&
+        {jsonFormat &&
             jsonFormat.data.slice(6, 9).map((post) => (
               <div key={post.id} id="feed-content" className="overflow">
-                <img src={post.media_url} alt="Post" />
+                {post.media_url.includes(".mp4") ? (
+                  // Si la URL del medio contiene ".mp4", usa un elemento de video
+                  <video controls playsInline muted loop>
+                    <source src={post.media_url} type="video/mp4" />
+                    Tu navegador no admite el elemento de video.
+                  </video>
+                ) : (
+                  // Si no, usa un elemento de imagen
+                  <img src={post.media_url} alt="Post" />
+                )}
                 <div className="opacity-hover">
                   <a
                     href={post.permalink}

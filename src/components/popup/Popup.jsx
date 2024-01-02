@@ -31,14 +31,20 @@ const Popup = () => {
         <div className="popup-container">
           <div className="popup-content">
 					{windowWidth < 860 ? (
-              <img
-                src="url_de_la_imagen_para_pantallas_pequenas"
-                alt="Feliz Navidad y Próspero Año Nuevo 2024!"
+              <video
+                src="./popup/video2014.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
             ) : (
-              <img
-                src="./popup/felicitacion-navidad-2023.webp"
-                alt="Felices Fiestas y un próspero año nuevo! Con gratitud, el equipo de @mano!"
+              <video
+                src="./popup/video2014.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
               />
             )}
             <button onClick={handleClose}>Cerrar</button>

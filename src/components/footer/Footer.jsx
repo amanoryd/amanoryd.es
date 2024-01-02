@@ -70,7 +70,7 @@ function Footer() {
               <Link to="/blog" onClick={handleLinkClick}>Blog</Link>
             </li>
             <li>
-              <a href="#">Contacto</a>
+              <a href="https://wa.me/34603030316" target="_blank">Contacto</a>
             </li>
           </ul>
         </div>

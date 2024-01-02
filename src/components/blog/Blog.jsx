@@ -4,7 +4,7 @@ import "./Blog.css";
 
 function Blog() {
   const [loading, setLoading] = useState(true);
-  const { data } = useFetch("https://amanoryd.es/wp-json/wp/v2/posts");
+  const { data } = useFetch("https://amanoryd.es/api_post_WPrecord.json");
 
   // useEffect para manejar el estado de carga
   useEffect(() => {

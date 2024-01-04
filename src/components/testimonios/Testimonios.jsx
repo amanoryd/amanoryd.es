@@ -11,7 +11,7 @@ const Testimonios = () => {
 
   // Uso el componente useFetch para llamar la API de Google Maps
   const googleMapsUrl = useFetch(
-    `https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ672_FNElQg0RgJGNkyozTQY&fields=reviews&key=${apiTokenMaps}`
+    `${proxyUrl}https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ672_FNElQg0RgJGNkyozTQY&fields=reviews&key=${apiTokenMaps}`
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos

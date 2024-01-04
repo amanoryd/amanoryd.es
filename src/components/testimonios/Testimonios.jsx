@@ -6,12 +6,9 @@ const Testimonios = () => {
   // Constantes para manejar la llamada a la API (con Token y PlaceID de Google Maps)
   const apiTokenMaps = import.meta.env.VITE_PUBLIC_GOOGLE_MAPS_API_KEY;
 
-  // Utilizando CORS Anywhere como proxy
-  const proxyUrl = "https://cors-anywhere.herokuapp.com/";
-
   // Uso el componente useFetch para llamar la API de Google Maps
   const googleMapsUrl = useFetch(
-    `${proxyUrl}https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ672_FNElQg0RgJGNkyozTQY&fields=reviews&key=${apiTokenMaps}`
+    'http://localhost:3001/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY'
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos

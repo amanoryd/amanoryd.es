@@ -4,11 +4,10 @@ import './Testimonios.css';
 
 const Testimonios = () => {
   // Constantes para manejar la llamada a la API (con Token y PlaceID de Google Maps)
-  const apiTokenMaps = import.meta.env.VITE_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   // Uso el componente useFetch para llamar la API de Google Maps
   const googleMapsUrl = useFetch(
-    'https://backend-proxy-amanoryd.vercel.app:3001/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY'
+    `https://backend-proxy-amanoryd.vercel.app:${port}/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY`
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos

@@ -31,8 +31,7 @@
 /* animación activada con el scroll */
 .profesionales1 h1,
 .profesionales1 p,
-.profesionales1 a,
-#feed-container div {
+.profesionales1 a {
   view-timeline-name: --fade-y;
   view-timeline-axis: block;
 

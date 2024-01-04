@@ -8,7 +8,7 @@ const Testimonios = () => {
 
   // Uso el componente useFetch para llamar la API de Google Maps
   const googleMapsUrl = useFetch(
-    'http://localhost:3001/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY'
+    'https://proxyamanoryd.netlify.app:3001/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY'
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos

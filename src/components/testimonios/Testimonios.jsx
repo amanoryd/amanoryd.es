@@ -6,6 +6,9 @@ const Testimonios = () => {
   // Constantes para manejar la llamada a la API (con Token y PlaceID de Google Maps)
 
   // Uso el componente useFetch para llamar la API de Google Mapsa traves del servidor backend-proxy
+  // NOTA IMPORTANTE: el uso del servidor proxy está restringido por políticas CORS a que solo tiene
+  // acceso la url https://amanoryd.es. A este servidor no se puede acceder desde el entorno de desarrollo,
+  // es decir, no se puede acceder desde las url de http://localhost*
   const googleMapsUrl = useFetch(
     "https://backend-proxy-amanoryd-dev-agat.1.us-1.fl0.io/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY"
   );

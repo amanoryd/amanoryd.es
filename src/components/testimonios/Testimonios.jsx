@@ -1,34 +1,39 @@
 import React from "react";
 import { useFetch } from "../../useFetch";
-import './Testimonios.css';
+import "./Testimonios.css";
 
 const Testimonios = () => {
   // Constantes para manejar la llamada a la API (con Token y PlaceID de Google Maps)
 
-  // Uso el componente useFetch para llamar la API de Google Maps
+  // Uso el componente useFetch para llamar la API de Google Mapsa traves del servidor backend-proxy
   const googleMapsUrl = useFetch(
-    'https://backend-proxy-amanoryd.vercel.app:3001/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY'
+    "https://backend-proxy-amanoryd-dev-agat.1.us-1.fl0.io/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY"
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos
   const jsonFormatGMaps = googleMapsUrl.data;
+    console.log(jsonFormatGMaps);
+
+  // Si la data aún no ha cargado, muestra un mensaje de carga
+  if (!jsonFormatGMaps) {
+    return <div>Cargando...</div>;
+  }
 
   // Filtrar las reseñas con más de 3 estrellas
   const filteredReviews =
-    jsonFormatGMaps &&
-    jsonFormatGMaps.result.reviews
-      .filter((review) => review.rating > 3)
-      .slice(0, 4);
+    jsonFormatGMaps?.result?.reviews
+      ?.filter((review) => review.rating > 3)
+      ?.slice(0, 4);
 
   // Función para capitalizar la inicial de los nombres de los clientes
   const formatName = (name) => {
     return name
       .toLowerCase()
-      .split(' ')
+      .split(" ")
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(' ');
+      .join(" ");
   };
-  
+
   // Función para generar las estrellas en formato SVG
   const renderStarRating = (rating) => {
     const totalStars = 5;
@@ -61,17 +66,19 @@ const Testimonios = () => {
     <section className="testimonios-container">
       <div className="testimonios-wrapper">
         <h1>Testimonios</h1>
-        <p>
-          Lo que opinan nuestros Clientes
-        </p>
+        <p>Lo que opinan nuestros Clientes</p>
 
         <div className="header-reviews">
           <div className="header-wrapper">
             <img src="./Google__G__logo.png" alt="Google logo" />
-            <img src="./five_stars_maps.svg" alt="4.2" style={{width: "200px"}}/>
+            <img
+              src="./five_stars_maps.svg"
+              alt="4.2"
+              style={{ width: "200px" }}
+            />
             <h3>4,2</h3>
           </div>
-          <h2 style={{textAlign: "center"}}>Amano, Reformas y Decoración</h2>
+          <h2 style={{ textAlign: "center" }}>Amano, Reformas y Decoración</h2>
         </div>
       </div>
 
@@ -81,7 +88,9 @@ const Testimonios = () => {
             filteredReviews.map((review) => (
               <div key={review.author_name} id="reviews-content">
                 <img src={review.profile_photo_url} alt={review.author_name} />
-                <h2 style={{textAlign: "center"}}>{formatName(review.author_name)}</h2>
+                <h2 style={{ textAlign: "center" }}>
+                  {formatName(review.author_name)}
+                </h2>
                 <h3>{review.rating} estrellas</h3>
 
                 {/* Imágen SVG de las estrellas según el rating */}

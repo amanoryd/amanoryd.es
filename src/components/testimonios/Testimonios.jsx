@@ -10,7 +10,7 @@ const Testimonios = () => {
   // acceso la url https://amanoryd.es. A este servidor no se puede acceder desde el entorno de desarrollo,
   // es decir, no se puede acceder desde las url de http://localhost*
   const googleMapsUrl = useFetch(
-    "https://backend-proxy-amanoryd-dev-agat.1.us-1.fl0.io/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY"
+    "https://prueba-de-maps-como-estudiante.oa.r.appspot.com/places?placeId=ChIJ672_FNElQg0RgJGNkyozTQY"
   );
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos

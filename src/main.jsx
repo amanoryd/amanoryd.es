@@ -22,7 +22,7 @@ const Main = () => {
   return (
     <>
       <Nav />
-      <Popup />
+      {/* <Popup /> */}
       <Hero />
       <Section1 />
       <Profesionales />

@@ -95,7 +95,7 @@ function Hero() {
                 {index === 4 && ''}
               </p>
             </div>
-            <a href="#" className='button-a1'>Read More</a>
+            {/* <a href="#" className='button-a1'>Read More</a> */}
 
           </div>
         ))}

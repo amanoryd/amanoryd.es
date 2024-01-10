@@ -102,13 +102,13 @@ function Hero() {
 
         <div className="media-icons">
           
-          <a href="https://www.facebook.com/amanoreformas/">
+          <a href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES" target='_blank'>
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://www.instagram.com/amano_reformas/">
+          <a href="https://www.instagram.com/amano_reformas/" target='_blank'>
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.twitter.com/amanoryd/">
+          <a href="https://www.twitter.com/amanoryd/" target='_blank'>
             <FontAwesomeIcon icon={faTwitter} />
           </a>
 

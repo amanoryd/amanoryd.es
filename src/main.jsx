@@ -2,7 +2,7 @@ import React from 'react';
 
 // Componentes del sitio
 import Nav from './components/nav/Nav';
-import Popup from './components/popup/Popup';
+// import Popup from './components/popup/Popup';
 import Hero from './components/hero/Hero';
 import Section1 from './components/section1/Section1';
 import Profesionales from './components/profesionales/Profesionales';

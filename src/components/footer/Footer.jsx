@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
-
   const history = useNavigate();
 
   const handleLinkClick = () => {
@@ -21,30 +20,32 @@ function Footer() {
     <footer className="footer">
       <div className="info1-1">
         <div className="bloque">
-          <img
-            src="./logov2.svg"
-            alt="Amano, Reformas y Decoración"
-            width={"75%"}
-          />
+          <Link to="/">
+            <img
+              src="./logov2.svg"
+              alt="Amano, Reformas y Decoración"
+              width={"75%"}
+            />
+          </Link>
           <p>
             Comprometidos con la calidad a través de la innovación de productos
             y soluciones.
           </p>
 
-            <span className="media-icons">
-              <a href="https://www.facebook.com/amanoreformas/">
-                <FontAwesomeIcon icon={faFacebookF} />
-                 {/* Facebook */}
-              </a>
-              <a href="https://www.instagram.com/amano_reformas/">
-                <FontAwesomeIcon icon={faInstagram} />
-                {/* Instagram */}
-              </a>
-              <a href="https://www.twitter.com/amanoryd/">
-                <FontAwesomeIcon icon={faTwitter} />
-                {/* Twitter */}
-              </a>
-            </span>
+          <span className="media-icons">
+            <a href="https://www.facebook.com/amanoreformas/">
+              <FontAwesomeIcon icon={faFacebookF} />
+              {/* Facebook */}
+            </a>
+            <a href="https://www.instagram.com/amano_reformas/">
+              <FontAwesomeIcon icon={faInstagram} />
+              {/* Instagram */}
+            </a>
+            <a href="https://www.twitter.com/amanoryd/">
+              <FontAwesomeIcon icon={faTwitter} />
+              {/* Twitter */}
+            </a>
+          </span>
         </div>
 
         <div className="bloque">
@@ -61,16 +62,20 @@ function Footer() {
           <h2>Enlaces</h2>
           <ul>
             <li>
-              <Link to="/" onClick={handleLinkClick}>Inicio</Link>
+              <Link to="/" onClick={handleLinkClick}>
+                Inicio
+              </Link>
             </li>
             <li>
               <a href="#proyectos">Proyectos</a>
             </li>
             <li>
-              <Link to="/blog" onClick={handleLinkClick}>Blog</Link>
+              <Link to="/blog" onClick={handleLinkClick}>
+                Blog
+              </Link>
             </li>
             <li>
-              <a href="https://wa.me/34603030316" target="_blank">Contacto</a>
+              <a href="/contacto">Contacto</a>
             </li>
           </ul>
         </div>

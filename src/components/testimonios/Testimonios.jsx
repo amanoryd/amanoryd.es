@@ -111,7 +111,7 @@ const Testimonios = () => {
                   <g>{renderStarRating(filteredReviews[0].rating)}</g>
                 </svg>
 
-                <p>{review.text.slice(0, 200)}...</p>
+                <p>"{review.text.slice(0, 200)}..."</p>
               </div>
             ))}
         </div>

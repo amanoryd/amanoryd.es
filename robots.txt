@@ -1,3 +1,2 @@
 User-agent: *
-
 Sitemap: https://amanoryd.es.com/sitemap.xml

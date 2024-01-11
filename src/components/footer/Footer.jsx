@@ -50,11 +50,11 @@ function Footer() {
 
         <div className="bloque">
           <h2>Estamos en</h2>
-          <p>Calle Historias de la radio 3, Portal 4 (local), 28018 Madrid</p>
+          <p>Calle Historias de la radio 3, 28018 Madrid</p>
           <h2>
-            91 785 77 16
+            +34 917 85 77 16
             <br />
-            603 03 03 16
+            +34 603 03 03 16
           </h2>
         </div>
 

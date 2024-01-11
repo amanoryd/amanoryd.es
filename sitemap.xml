@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página de Inicio -->
+  <url>
+    <loc>https://amanoryd.es/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Página de Proyectos -->
+  <url>
+    <loc>https://www.amanoryd.es/#proyectos</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Página de Blog -->
+  <url>
+    <loc>https://www.amanoryd.es/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Página de Contacto -->
+  <url>
+    <loc>https://www.amanoryd.es/contacto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Agrega más URLs según sea necesario para otras secciones o páginas -->
+
+</urlset>

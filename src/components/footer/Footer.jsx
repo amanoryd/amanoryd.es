@@ -20,7 +20,7 @@ function Footer() {
     <footer className="footer">
       <div className="info1-1">
         <div className="bloque">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <img
               src="./logov2.svg"
               alt="Amano, Reformas y Decoración"
@@ -94,6 +94,7 @@ function Footer() {
 
       <div className="copyright">
         <p>Copyright © 2023 Amano, Reformas y Decoración</p>
+        <Link to="/cookies" onClick={handleLinkClick}>Política de cookies</Link>
       </div>
     </footer>
   );

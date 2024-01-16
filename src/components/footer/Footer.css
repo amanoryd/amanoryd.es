@@ -57,7 +57,14 @@ ul li a:hover {
 }
 
 .footer .copyright {
-    padding: 0 0 3% 5%;
+    width: 100%;
+    padding: 0 3% 2% 3%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.footer .copyright a {
+    color: var(--color-uno);
 }
 
 

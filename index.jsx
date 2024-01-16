@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Main from "./src/main";
 import BlogPage from "./src/Pages/BlogPage";
 import Contacto from "./src/Pages/Contacto";
+import CookiesPolicy from "./src/Pages/CookiesPolicy";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "contacto",
     element: <Contacto />
   },
+  {
+    path: "cookies",
+    element: <CookiesPolicy />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

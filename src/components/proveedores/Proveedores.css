@@ -1,0 +1,16 @@
+.proveedores-container {
+  width: 100%;
+  padding: 5% 0;
+}
+
+.proveedores-container h2 {
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 5px;
+  padding-bottom: 3%;
+}
+
+.proveedores-container img {
+  max-width: 280px;
+  /* width: 90%; */
+}

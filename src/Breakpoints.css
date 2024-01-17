@@ -324,4 +324,12 @@
     width: 95%;
     font-size: 1em;
   }
+
+  /* PROVEEDORES */
+  .proveedores-container {
+    padding: 25% 0;
+  }
+  .proveedores-container h2 {
+    font-size: 2.5em;
+  }
 }

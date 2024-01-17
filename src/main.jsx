@@ -29,8 +29,8 @@ const Main = () => {
       <Blog />
       <Proyectos />
       <Stats />
-      <Proveedores />
       <Testimonios />
+      <Proveedores />
       <Footer />
     </>
   )

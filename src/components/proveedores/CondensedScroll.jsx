@@ -21,9 +21,9 @@ const TAGS = [
   { text: "", image: "./proveedores/pergo_logo.webp" },
   { text: "", image: "./proveedores/roca_logo.webp" },
   { text: "", image: "./proveedores/silestone_logo.webp" },
-  { text: "", image: "./proveedores/tarkett_logo.webp" },
+  { text: "", image: "./proveedores/nofer_logo.webp" },
   { text: "", image: "./proveedores/torvisco_logo.webp" },
-  { text: "", image: "./proveedores/wicanders_logo.webp" },
+  { text: "", image: "./proveedores/imex_logo.webp" },
 ];
 
 const DURATION = 40000;

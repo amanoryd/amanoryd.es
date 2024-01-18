@@ -1,6 +1,10 @@
 import React from "react";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faPhone
+// } from "@fortawesome/free-brands-svg-icons";
 
 import "../Pages/styles/Contacto.css"
 
@@ -53,7 +57,7 @@ const Contacto = () => {
 			    <div class="contactInfo">
 
 				    <div class="box">
-					    <div class="icon"><ion-icon name="location-outline"></ion-icon></div>
+					    <a class="icon"><FontAwesomeIcon icon={faPhone} /></a>
 					    <div class="text">
 						    <h3>Amano, Reformas y Decoración</h3>
 						    <p>Calle Historias de la radio 3<br />28018 Madrid</p>

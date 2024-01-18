@@ -57,7 +57,7 @@ const Contacto = () => {
 			    <div class="contactInfo">
 
 				    <div class="box">
-					    <a class="icon"><FontAwesomeIcon icon={faPhone} /></a>
+					    <div class="icon"><ion-icon name="call-outline" /></div>
 					    <div class="text">
 						    <h3>Amano, Reformas y Decoración</h3>
 						    <p>Calle Historias de la radio 3<br />28018 Madrid</p>

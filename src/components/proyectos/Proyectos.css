@@ -1,37 +1,37 @@
 .proyectos-container {
-  width: 100%;
-  padding: 5% 0;
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 10% 0;
 }
 
 .proyectos-container h1 {
   font-size: 3em;
   text-align: center;
   letter-spacing: 5px;
+  margin-bottom: 8%;
 }
 
 .proyectos-wrapper {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5%;
-  gap: 5%;
+  gap: 20px;
 }
 
-.parent {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* grid-template-rows: repeat(2, 1fr); */
-  grid-column-gap: 10px;
-  grid-row-gap: 0px;
-  align-items: center;
-  }
-  
-  .div1 { grid-area: 1 / 1 / 3 / 2; }
-  .div2 { grid-area: 1 / 2 / 2 / 3; }
-  .div3 { grid-area: 2 / 2 / 3 / 3; }
+.proyectos-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
 
-  .parent img {
-    width: 100%;
-    object-fit: cover;
-  }
+#proyectos-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#photo-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}

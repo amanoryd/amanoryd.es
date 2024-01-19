@@ -26,8 +26,8 @@ const Main = () => {
       <Hero />
       <Section1 />
       <Profesionales />
-      <Blog />
       <Proyectos />
+      <Blog />
       <Stats />
       <Testimonios />
       <Proveedores />

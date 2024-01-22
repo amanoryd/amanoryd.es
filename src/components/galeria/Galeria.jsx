@@ -28,7 +28,6 @@ const Galeria = (props) => {
   return (
     <div className="pswp-gallery" id={props.galleryID}>
       {props.images.map((image, index) => (
-        <div id="photo-gallery">
           <a
             href={image.largeURL}
             data-pswp-width={image.width}
@@ -36,10 +35,10 @@ const Galeria = (props) => {
             key={props.galleryID + "-" + index}
             target="_blank"
             rel="noreferrer"
+            loading="lazy"
           >
             <img src={image.thumbnailURL} alt="" loading="lazy" />
           </a>
-        </div>
       ))}
     </div>
   );

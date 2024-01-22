@@ -1,7 +1,6 @@
 .proyectos-container {
-  max-width: 1224px;
-  width: 90%;
-  margin: auto;
+  /* max-width: 1400px; */
+  width: 100%;
   padding: 10% 0;
 }
 
@@ -9,29 +8,33 @@
   font-size: 3em;
   text-align: center;
   letter-spacing: 5px;
-  margin-bottom: 8%;
 }
 
-.proyectos-wrapper {
-  display: flex;
-  gap: 20px;
+.proyectos-container p {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  text-align: center;
+  /* width: 60%; */
+  padding: 2% 0;
+  text-wrap: pretty;
+  margin-bottom: 5%;
 }
 
-.proyectos-gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-#proyectos-column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#photo-gallery img {
+.pswp-gallery {
+  max-width: 1600px;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* con la propiedad "columns" creo la grilla estilo masonry */
+  columns: 5 200px;
+  column-gap: 1em;
+  padding: 0 5%;
+}
+
+.pswp-gallery img {
+  max-width: 100%;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  display: block;
 }

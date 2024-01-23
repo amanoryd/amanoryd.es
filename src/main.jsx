@@ -56,8 +56,8 @@ const Main = () => {
       >
         Usamos cookies para mejorar la experiencia de usuario, mostrar contenido
         personalizado y analizar el tráfico de nuestra web. Al hacer click en
-        "Aceptar", apruebas el consentimiento de nuestro uso de cookies.{" "}
-        <Link to="/cookies" onClick={handleLinkClick}>Política de cookies</Link>
+        "Aceptar", apruebas el consentimiento de nuestro uso de cookies. {" "}
+        <Link to="/cookies" onClick={handleLinkClick}>Leer más</Link>
       </CookieConsent>
     </>
   );

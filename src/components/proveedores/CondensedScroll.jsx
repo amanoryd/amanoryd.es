@@ -1,29 +1,19 @@
 import React from 'react';
 import './CondensedScroll.css';
 
-const COLORS = [
-  "#bbf7d0",
-  "#99f6e4",
-  "#bfdbfe",
-  "#ddd6fe",
-  "#f5d0fe",
-  "#fed7aa",
-  "#fee2e2"
-];
-
 const TAGS = [
-  { text: "", image: "./proveedores/grohe_logo.webp" },
-  { text: "", image: "./proveedores/geberit_logo.webp" },
-  { text: "", image: "./proveedores/cucine_oggi_logo.webp" },
-  { text: "", image: "./proveedores/neolith_logo.webp" },
-  { text: "", image: "./proveedores/optimus_kitchen_logo.webp" },
-  { text: "", image: "./proveedores/pando_logo.webp" },
-  { text: "", image: "./proveedores/pergo_logo.webp" },
-  { text: "", image: "./proveedores/roca_logo.webp" },
-  { text: "", image: "./proveedores/silestone_logo.webp" },
-  { text: "", image: "./proveedores/nofer_logo.webp" },
-  { text: "", image: "./proveedores/torvisco_logo.webp" },
-  { text: "", image: "./proveedores/imex_logo.webp" },
+  { text: "Grohe", image: "./proveedores/grohe_logo.webp" },
+  { text: "Geberit", image: "./proveedores/geberit_logo.webp" },
+  { text: "Cucine Oggi", image: "./proveedores/cucine_oggi_logo.webp" },
+  { text: "Neolith", image: "./proveedores/neolith_logo.webp" },
+  { text: "Optimus Kitchen", image: "./proveedores/optimus_kitchen_logo.webp" },
+  { text: "Pando", image: "./proveedores/pando_logo.webp" },
+  { text: "Pergo", image: "./proveedores/pergo_logo.webp" },
+  { text: "Roca", image: "./proveedores/roca_logo.webp" },
+  { text: "Silestone", image: "./proveedores/silestone_logo.webp" },
+  { text: "Nofer", image: "./proveedores/nofer_logo.webp" },
+  { text: "Torvisco", image: "./proveedores/torvisco_logo.webp" },
+  { text: "IMEX", image: "./proveedores/imex_logo.webp" },
 ];
 
 const DURATION = 40000;
@@ -52,7 +42,6 @@ const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {
 
 const Tag = ({ tag }) => (
   <div className="tag">
-    <span></span> {tag.text}
     <img src={tag.image} alt={tag.text} />
   </div>
 );

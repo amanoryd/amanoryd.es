@@ -8,23 +8,23 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Página de Proyectos -->
+  <!-- Página de Proyectos
   <url>
-    <loc>https://www.amanoryd.es/#proyectos</loc>
+    <loc>https://amanoryd.es/#proyectos</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
+  </url> -->
 
   <!-- Página de Blog -->
   <url>
-    <loc>https://www.amanoryd.es/blog</loc>
+    <loc>https://amanoryd.es/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Página de Contacto -->
   <url>
-    <loc>https://www.amanoryd.es/contacto</loc>
+    <loc>https://amanoryd.es/contacto</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

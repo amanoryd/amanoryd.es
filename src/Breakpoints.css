@@ -143,6 +143,12 @@
     padding: 0 10% 0 10%;
   }
 
+  /* SERVICIOS */
+  .services {
+    padding: 25% 5%;
+
+  }
+
   /* PROYECTOS */
   .proyectos-container h1 {
     font-size: 2.5rem;

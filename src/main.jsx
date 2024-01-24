@@ -5,6 +5,7 @@ import Nav from "./components/nav/Nav";
 // import Popup from './components/popup/Popup';
 import Hero from "./components/hero/Hero";
 import Section1 from "./components/section1/Section1";
+import Servicios from "./components/servicios/Servicios";
 import Profesionales from "./components/profesionales/Profesionales";
 import Blog from "./components/blog/Blog";
 import Proyectos from "./components/proyectos/Proyectos";
@@ -37,6 +38,7 @@ const Main = () => {
       {/* <Popup /> */}
       <Hero />
       <Section1 />
+      <Servicios />
       <Profesionales />
       <Proyectos />
       <Blog />

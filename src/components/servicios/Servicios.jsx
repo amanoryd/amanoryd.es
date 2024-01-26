@@ -48,7 +48,7 @@ const Servicios = () => {
         Nos dedicamos a transformar tus ideas en realidad, convertimos tu visión
         en un hogar que refleje tu estilo y que cumpla con tus necesidades.
       </p>
-      <div>
+      <div className="heartbeat">
         <a href="/contacto" className="button-a1">
           SOLICITAR PRESUPUESTO
         </a>
@@ -68,7 +68,7 @@ const Servicios = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div className="heartbeat">
         <a href="/contacto" className="button-a1">
           SOLICITAR PRESUPUESTO
         </a>

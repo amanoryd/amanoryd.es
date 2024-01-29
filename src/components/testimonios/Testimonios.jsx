@@ -15,7 +15,6 @@ const Testimonios = () => {
 
   // Convierto la data de la API en una constante para facilitar el manejo de los datos
   const jsonFormatGMaps = googleMapsUrl.data;
-    console.log(jsonFormatGMaps);
 
   // Si la data aún no ha cargado, muestra un mensaje de carga
   if (!jsonFormatGMaps) {

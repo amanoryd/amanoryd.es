@@ -1,14 +1,25 @@
 import React from "react";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faPhone
-// } from "@fortawesome/free-brands-svg-icons";
+// Utilizo librería React-Icons en este documento
+import { FaMapPin, FaPhoneVolume } from "react-icons/fa6";
 
-import "../Pages/styles/Contacto.css"
+// COMPORTAMIENTO RESPONSIVE DENTRO DE ESTE ARCHIVO CSS //
+import "../Pages/styles/Contacto.css";
 
 const Contacto = () => {
+  const handleDirectionsClick = () => {
+    // Coordenadas //
+    const latitude = "40.38026613327212";
+    const longitude = "-3.6556973738123415";
+
+    // URL de Google Maps con las coordenadas
+    const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
+
+    // Abre la URL en una nueva pestaña
+    window.open(googleMapsUrl, "_blank");
+  };
+
   return (
     <>
       <Nav />
@@ -25,11 +36,9 @@ const Contacto = () => {
         </div>
 
         <div className="container">
-
           <div className="contactForm">
-
             <form name="contact" action="/contact" method="post">
-              <input type="hidden" name="form-name" value="contact"/>
+              <input type="hidden" name="form-name" value="contact" />
               <h2>Déjanos un mensaje</h2>
               <div className="inputBox">
                 <input type="text" name="name" required />
@@ -51,42 +60,39 @@ const Contacto = () => {
                 <input type="submit" value="Enviar" />
               </div>
             </form>
-
           </div>
 
-			    <div class="contactInfo">
-
-				    <div class="box">
-					    <div class="icon"><ion-icon name="call-outline" /></div>
-					    <div class="text">
-						    <h3>Amano, Reformas y Decoración</h3>
-						    <p>Calle Historias de la radio 3<br />28018 Madrid</p>
-				      </div>
+          <div class="contactInfo">
+            <div class="box">
+              <a href="javascript:void(0)" onClick={handleDirectionsClick}>
+                <div class="icon">
+                  <FaMapPin />
+                </div>
+                <div class="text">
+                  <h3>Amano, Reformas y Decoración</h3>
+                  <p>
+                    Calle Historias de la Radio 3, Portal 4 (Local)
+                    <br />
+                    28018 Madrid
+                  </p>
+                </div>
+              </a>
             </div>
 
-				    <div class="box">
-					    <div class="icon"><ion-icon name="call-outline"></ion-icon></div>
-					    <div class="text">
-						    <h3>Teléfono</h3>
-						    <p>+34 917 85 77 16</p>
+            <div class="box">
+              <a href="javascript:void(0)">
+              <div class="icon">
+                <FaPhoneVolume />
+              </div>
+              <div class="text">
+                <h3>Teléfono</h3>
+                <p>+34 917 85 77 16</p>
                 <p>+34 603 03 03 16</p>
-					    </div>
-				    </div>
-
-            <div>
-				      <h2 class="txt">Síguenos en</h2>
-              <ul class="sci">
-                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-              </ul>
+              </div>
+              </a>
             </div>
-
           </div>
-
         </div>
-
       </section>
       <Footer />
     </>

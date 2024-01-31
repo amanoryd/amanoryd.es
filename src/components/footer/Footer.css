@@ -29,7 +29,7 @@
 }
 
 .footer .bloque:nth-child(n+2):nth-child(-n+3) {
-    padding: 5% 5% 0 5%
+    padding: 5% 4% 0 5%
 }
 
 .footer .bloque h2:nth-child(n+2) {

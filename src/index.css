@@ -22,5 +22,10 @@
   --shadow-lg: 0px 16px 24px var(--shadow-color),
     0px 2px 6px var(--shadow-color);
   --gradient-complement: linear-gradient(90deg, rgba(138, 46, 64, 0.5) 0%, rgba(66, 109, 138, 0.5) 80%);
+
+  --borgona: #401119;
+  --borgona-mid-tone: #B7465F;
+  --borgona-mid-low: #db9f94;
+  --borgona-low-tone: #ebd4cc;
 }
 

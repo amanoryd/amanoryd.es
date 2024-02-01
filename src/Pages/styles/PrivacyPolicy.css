@@ -1,0 +1,18 @@
+.privacyPolicy p {
+  padding: 20px 0;
+}
+
+.privacyPolicy ul>li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.privacyPolicy ul {
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .privacyPolicy {
+    margin-top: 25%;
+  }
+}

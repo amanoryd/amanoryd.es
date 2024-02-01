@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Main from "./src/Main.jsx";
+import Main from "./src/Main";
 import BlogPage from "./src/Pages/BlogPage";
 import Contacto from "./src/Pages/Contacto";
 import CookiesPolicy from "./src/Pages/CookiesPolicy";

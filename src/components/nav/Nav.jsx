@@ -23,7 +23,7 @@ function Nav() {
         <div className={`navigation ${menuOpen ? "active" : ""}`}>
           <div className="navigation-items">
             <Link to="/">Inicio</ Link>
-            <a href="#proyectos">Proyectos</a>
+            <Link to="/proyectos">Proyectos</Link>
             <Link to="/blog">Blog</Link>
             <a href="/contacto">Contacto</a>
             <a href="https://wa.me/34603030316" target="_blank">WhatsApp</a>

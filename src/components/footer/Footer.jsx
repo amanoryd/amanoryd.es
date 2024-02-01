@@ -50,7 +50,7 @@ function Footer() {
 
         <div className="bloque">
           <h2>Estamos en</h2>
-          <p>Calle Historias de la radio 3, 28018 Madrid</p>
+          <p>Calle Historias de la Radio 3, Portal 4 (Local), 28018 Madrid</p>
           <h2>
             +34 917 85 77 16
             <br />
@@ -67,7 +67,7 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <a href="#proyectos">Proyectos</a>
+              <Link to="/proyectos" onClick={handleLinkClick}>Proyectos</Link>
             </li>
             <li>
               <Link to="/blog" onClick={handleLinkClick}>
@@ -95,6 +95,7 @@ function Footer() {
       <div className="copyright">
         <p>Copyright © 2023 Amano, Reformas y Decoración</p>
         <Link to="/cookies" onClick={handleLinkClick}>Política de cookies</Link>
+        <Link to="/privacy" onClick={handleLinkClick}>Política de Privacidad</Link>
       </div>
     </footer>
   );

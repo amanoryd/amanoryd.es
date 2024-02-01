@@ -2,10 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Main from "./src/main";
+import Main from "./src/Main";
 import BlogPage from "./src/Pages/BlogPage";
 import Contacto from "./src/Pages/Contacto";
 import CookiesPolicy from "./src/Pages/CookiesPolicy";
+import PrivacyPolicy from "./src/Pages/PrivacyPolicy";
+import GaleriaPage from "./src/Pages/GaleriaPage";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "cookies",
     element: <CookiesPolicy />
+  },
+  {
+    path: "privacy",
+    element: <PrivacyPolicy />
+  },
+  {
+    path: "proyectos",
+    element: <GaleriaPage />
   }
 ]);
 

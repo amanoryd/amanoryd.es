@@ -1,25 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { useFetch } from "../../useFetch";
+import BlogPosts from "./BlogPosts";
 import "./Blog.css";
 
 function Blog() {
-  const [loading, setLoading] = useState(true);
-  const { data } = useFetch("https://amanoryd.es/api_post_WPrecord.json");
+  const [selectedPostId, setSelectedPostId] = useState(null);
 
-  // useEffect para manejar el estado de carga
   useEffect(() => {
-    if (data) {
-      setLoading(false);
-    }
-  }, [data]);
+    // Obtener el ID del último post al montar el componente
+    const sortedPosts = BlogPosts.sort((a, b) => b.id - a.id);
+    const lastPostId = sortedPosts[0]?.id;
+    setSelectedPostId(lastPostId);
+  }, []); // El array vacío asegura que este efecto se ejecute solo una vez al montar el componente
 
-  const formatFecha = (fecha) => {
-    const options = { year: "numeric", month: "2-digit", day: "2-digit" };
-    return new Date(fecha).toLocaleDateString("es-ES", options);
+  const handlePost = (postId) => {
+    // Desplazar al top de la página
+    window.scrollTo({ top: 450, behavior: "smooth" });
+    // carga el post correspondiente
+    setSelectedPostId(postId);
   };
-
-  const postsToShow = window.innerWidth <= 480 ? 4 : 6;
-  const latestPosts = data && data.slice(0, postsToShow);
 
   return (
     <section className="blog-container" id="blog">
@@ -32,27 +30,47 @@ function Blog() {
         </p>
       </div>
 
-      {loading ? (
-        // Mostrar el loader mientras se cargan los datos
-        <div className="loader"></div>
-      ) : (
-        <div className="blog-wrap-bottom">
-          <article className="blog-article">
-            {latestPosts &&
-              latestPosts.map((post) => (
-                <span className="blog-item" key={post.id}>
-                  <img src={post.uagb_featured_image_src.medium[0]} alt="" />
-                  <div className="blog-item-wrap">
-                    <h2>{post.title.rendered}</h2>
-                    <p>{post.yoast_head_json.description}</p>
-                    <h5>{post.yoast_head_json.author}</h5>
-                    <h6>{formatFecha(post.date)}</h6>
-                  </div>
-                </span>
-              ))}
-          </article>
+      <div className="blog-wrap-bottom">
+        <div className="blog-list">
+          {BlogPosts.sort((a, b) => b.id - a.id) // Ordenar de mayor a menor por ID
+            .map((post, index) => (
+              <div key={index} style={{paddingBottom: "35px"}}>
+                <img src={post.img} alt={`Imágen del post ${index + 1}`} style={{width: "100%"}}/>
+                <h2>{post.title}</h2>
+                <p>Autor: {post.author}</p>
+                <p>Fecha: {post.date}</p>
+                {/* <div dangerouslySetInnerHTML={{ __html: post.post }} /> */}
+                <button onClick={() => handlePost(post.id)}>Leer más</button>
+              </div>
+            ))}
         </div>
-      )}
+
+        {selectedPostId && (
+          <div style={{ width: "75%", marginLeft: "5%" }} id="blog-article">
+            {/* Renderizar el contenido completo del post seleccionado */}
+            <img
+              src={BlogPosts.find((post) => post.id === selectedPostId).img}
+              alt=""
+            />
+            <h2>
+              {BlogPosts.find((post) => post.id === selectedPostId).title}
+            </h2>
+            <p>
+              Fecha: {BlogPosts.find((post) => post.id === selectedPostId).date}
+            </p>
+            <div
+              dangerouslySetInnerHTML={{
+                __html: BlogPosts.find((post) => post.id === selectedPostId)
+                  .post,
+              }}
+            ></div>
+            <p>
+              Autor:{" "}
+              {BlogPosts.find((post) => post.id === selectedPostId).author}
+            </p>
+          </div>
+        )}
+      </div>
     </section>
   );
 }

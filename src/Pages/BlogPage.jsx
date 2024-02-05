@@ -7,7 +7,6 @@ const BlogPage = () => {
   return (
     <>
       <Nav />
-      <div style={{paddingTop: "12vh", backgroundColor: "#000000"}}></div>
 			<Blog />
 			<Footer />
     </>

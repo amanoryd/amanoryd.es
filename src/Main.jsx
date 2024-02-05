@@ -8,7 +8,6 @@ import Hero from "./components/hero/Hero";
 import Section1 from "./components/section1/Section1";
 import Servicios from "./components/servicios/Servicios";
 import Profesionales from "./components/profesionales/Profesionales";
-import Blog from "./components/blog/Blog";
 import Proyectos from "./components/proyectos/Proyectos";
 import Stats from "./components/stats/Stats";
 import Proveedores from "./components/proveedores/Proveedores";
@@ -43,7 +42,6 @@ const Main = () => {
       <Servicios />
       <Profesionales />
       <Proyectos />
-      <Blog />
       <Stats />
       <Testimonios />
       <Proveedores />

@@ -40,7 +40,7 @@ function Blog() {
                 <p>Autor: {post.author}</p>
                 <p>Fecha: {post.date}</p>
                 {/* <div dangerouslySetInnerHTML={{ __html: post.post }} /> */}
-                <button onClick={() => handlePost(post.id)}>Leer más</button>
+                <button onClick={() => handlePost(post.id)} style={{padding: "0 5px"}}>Leer más</button>
               </div>
             ))}
         </div>

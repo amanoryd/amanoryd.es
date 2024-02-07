@@ -48,6 +48,7 @@
   width: 100%;
   padding: 5% 10%;
   display: flex;
+  gap: 30px;
   color: #000000;
 }
 
@@ -99,6 +100,7 @@
 #blog-article h2 {
   font-size: 1.55rem;
   padding-bottom: 15px;
+  padding-top: 35px;
 }
 
 #blog-article p {
@@ -117,6 +119,8 @@
 #blog-article img {
   margin: auto;
   display: block;
+  max-width: 800px;
+  width: 100%;
 }
 
 .blog-item p {

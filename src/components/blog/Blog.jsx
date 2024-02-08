@@ -13,11 +13,14 @@ function Blog() {
   }, []); // El array vacío asegura que este efecto se ejecute solo una vez al montar el componente
 
   const handlePost = (postId) => {
-    // Desplazar al top de la página
-    window.scrollTo({ top: 450, behavior: "smooth" });
     // carga el post correspondiente
     setSelectedPostId(postId);
+    handleTopClick();
   };
+
+  const handleTopClick = () => {
+    window.scrollTo({ top: 450, behavior: "smooth" });
+  }
 
   return (
     <section className="blog-container" id="blog">
@@ -46,7 +49,7 @@ function Blog() {
         </div>
 
         {selectedPostId && (
-          <div style={{ width: "75%", marginLeft: "5%" }} id="blog-article">
+          <div id="blog-article">
             {/* Renderizar el contenido completo del post seleccionado */}
             <img
               src={BlogPosts.find((post) => post.id === selectedPostId).img}
@@ -68,6 +71,7 @@ function Blog() {
               Autor:{" "}
               {BlogPosts.find((post) => post.id === selectedPostId).author}
             </p>
+            <button onClick={() => handleTopClick()} style={{ padding: "0 10px" }}>Volver arriba</button>
           </div>
         )}
       </div>

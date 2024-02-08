@@ -25,8 +25,8 @@ function Nav() {
             <Link to="/">Inicio</ Link>
             <Link to="/proyectos">Proyectos</Link>
             <Link to="/blog">Blog</Link>
-            <a href="/contacto">Contacto</a>
-            <a href="https://wa.me/34603030316" target="_blank">WhatsApp</a>
+            <Link to="/contacto">Contacto</Link>
+            <a href="https://wa.me/34603030316" target="_blank" rel="noopener noreferrer">WhatsApp</a>
               </div>
           </div>
       </div>

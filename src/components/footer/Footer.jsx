@@ -33,7 +33,10 @@ function Footer() {
           </p>
 
           <span className="media-icons">
-            <a href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES" target="_blank">
+            <a
+              href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES"
+              target="_blank"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
               {/* Facebook */}
             </a>
@@ -67,7 +70,9 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <Link to="/proyectos" onClick={handleLinkClick}>Proyectos</Link>
+              <Link to="/proyectos" onClick={handleLinkClick}>
+                Proyectos
+              </Link>
             </li>
             <li>
               <Link to="/blog" onClick={handleLinkClick}>
@@ -75,7 +80,9 @@ function Footer() {
               </Link>
             </li>
             <li>
-              <a href="/contacto">Contacto</a>
+              <Link to="/contacto" onClick={handleLinkClick}>
+                Contacto
+              </Link>
             </li>
           </ul>
         </div>
@@ -94,8 +101,12 @@ function Footer() {
 
       <div className="copyright">
         <p>Copyright © 2023 Amano, Reformas y Decoración</p>
-        <Link to="/cookies" onClick={handleLinkClick}>Política de cookies</Link>
-        <Link to="/privacy" onClick={handleLinkClick}>Política de Privacidad</Link>
+        <Link to="/cookies" onClick={handleLinkClick}>
+          Política de cookies
+        </Link>
+        <Link to="/privacy" onClick={handleLinkClick}>
+          Política de Privacidad
+        </Link>
       </div>
     </footer>
   );

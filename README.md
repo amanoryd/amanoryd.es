@@ -100,7 +100,7 @@ Se utiliza la API de Google Maps e Instagram para obtener data actualizada en fo
 
 La llamada a las API se hacen a traves de la importación del archivo `useFetch.js` creado especificamente para esta función, independientemente del proveedor API y de la clave API.
 - Por ejemplo, para hacer la llamada de datos de la API de Google Maps (Reviews) se pasan como parámetro la URL completa del servicio `https://proxy-server-a72q3zhwqq-no.a.run.app/` y el **ID** establecido por Google Maps para negocios, "Amano, Reformas y Decoración" `placeId=ChIJ672_FNElQg0RgJGNkyozTQY`.
-- Este prámetro se pasa a `useFetch.js` y este ejecuta el async await para capturar la data actualizada de la API.
+- Esta URL compuesta, se pasa como parámetro a `useFetch.js` y este ejecuta el async await para capturar la data actualizada de la API.
 
 >[!IMPORTANT]
 >

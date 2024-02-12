@@ -72,6 +72,42 @@ function Proyectos() {
             width: 1512,
             height: 2016,
           },
+          {
+            largeURL: "./proyectos/1-6/1-6-768x1024-1.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-1.webp",
+            width: 768,
+            height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-6/1-6-768x1024-2.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-2.webp",
+            width: 768,
+            height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-6/1-6-768x1024-3.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-3.webp",
+            width: 768,
+            height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-6/1-6-768x1024-4.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-4.webp",
+            width: 768,
+            height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-6/1-6-567x1024-5.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-567x1024-5.webp",
+            width: 567,
+            height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-6/1-6-768x1024-6.webp",
+            thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-6.webp",
+            width: 768,
+            height: 1024,
+          },
         ]}
       />
       {/* <button className="button-a1" style={{cursor: "pointer"}}>Ver más</button> */}

@@ -37,7 +37,7 @@ const Contacto = () => {
 
         <div className="container">
           <div className="contactForm">
-            <form name="contact" action="/contact" method="post" netlify>
+            <form name="contact" action="/contact" method="post">
               <input type="hidden" name="form-name" value="contact" />
               <h2>Déjanos un mensaje</h2>
               <div className="inputBox">
@@ -57,7 +57,6 @@ const Contacto = () => {
                 <span>Escribe tu mensaje...</span>
               </div>
               <div className="inputBox">
-                <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="Enviar" />
               </div>
             </form>
@@ -82,14 +81,14 @@ const Contacto = () => {
 
             <div class="box">
               <a href="javascript:void(0)">
-                <div class="icon">
-                  <FaPhoneVolume />
-                </div>
-                <div class="text">
-                  <h3>Teléfono</h3>
-                  <p>+34 917 85 77 16</p>
-                  <p>+34 603 03 03 16</p>
-                </div>
+              <div class="icon">
+                <FaPhoneVolume />
+              </div>
+              <div class="text">
+                <h3>Teléfono</h3>
+                <p>+34 917 85 77 16</p>
+                <p>+34 603 03 03 16</p>
+              </div>
               </a>
             </div>
           </div>

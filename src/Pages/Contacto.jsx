@@ -57,6 +57,7 @@ const Contacto = () => {
                 <span>Escribe tu mensaje...</span>
               </div>
               <div className="inputBox">
+                <div data-netlify-recaptcha="true"></div>
                 <input type="submit" value="Enviar" />
               </div>
             </form>

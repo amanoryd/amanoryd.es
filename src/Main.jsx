@@ -58,7 +58,8 @@ const Main = () => {
           fontSize: "13px",
         }}
         expires={30}
-        onAccept={function consentGrantedAdStorage() {
+        onAccept={() => {
+          console.log("Cookie consent accepted!");
           gtag("consent", "update", {
             ad_storage: "granted",
             ad_user_data: "granted",

@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <script>
+      // Define dataLayer and the gtag function.
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      // Set default consent to 'denied' as a placeholder
+      // Determine actual values based on your own requirements
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -35,20 +52,47 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <!-- Create one update function for each consent parameter -->
+    <script>
+      function consentGrantedAdStorage() {
+        gtag("consent", "update", {
+          ad_storage: "granted",
+          ad_user_data: "granted",
+          ad_personalization: "granted",
+          analytics_storage: "granted",
+        });
+      }
+    </script>
+
     <title>Amano, Reformas y Decoración</title>
 
     <!-- Meta etiquetas para optimizar el SEO -->
-    <meta name="description" content="Expertos en reformas y decoración en Madrid. Nuestro equipo de profesionales trabaja para lograr los mejores resultados en reformas de baños, cocinas e interiores."/>
-    <meta property="og:title" content="Amano, Reformas y Decoración | Reformas en Madrid | Reformas de Cocinas y Baños" />
-    <meta property="og:description" content="Transforma tu hogar con Amano, expertos en reformas y decoración en Madrid. Nuestro equipo de profesionales altamente cualificados trabaja con pasión para lograr los mejores resultados en reformas de baños, cocinas e interiores. Descubre ofertas exclusivas, calidad garantizada y un servicio que va más allá de las expectativas. ¡Confía en nosotros para renovar y embellecer cada rincón de tu espacio!"/>
-    <meta property="og:locale" content="es_ES">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Amano">
+    <meta
+      name="description"
+      content="Expertos en reformas y decoración en Madrid. Nuestro equipo de profesionales trabaja para lograr los mejores resultados en reformas de baños, cocinas e interiores."
+    />
+    <meta
+      property="og:title"
+      content="Amano, Reformas y Decoración | Reformas en Madrid | Reformas de Cocinas y Baños"
+    />
+    <meta
+      property="og:description"
+      content="Transforma tu hogar con Amano, expertos en reformas y decoración en Madrid. Nuestro equipo de profesionales altamente cualificados trabaja con pasión para lograr los mejores resultados en reformas de baños, cocinas e interiores. Descubre ofertas exclusivas, calidad garantizada y un servicio que va más allá de las expectativas. ¡Confía en nosotros para renovar y embellecer cada rincón de tu espacio!"
+    />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Amano" />
     <meta name="robots" content="index, follow" />
-    <meta name="category" content="Reformas de Baños, Reformas de Cocinas, Reformas de Interiores, Reformas Integrales, Madrid"/>
+    <meta
+      name="category"
+      content="Reformas de Baños, Reformas de Cocinas, Reformas de Interiores, Reformas Integrales, Madrid"
+    />
     <meta name="author" content="Daniel Eduardo Oliveros" />
-    <meta name="keywords" content="reformas, reformas integrales, renovación de baños, diseño de cocinas, decoración de interiores, servicios de reformas, Madrid">
-    <meta name="locality" content="Comunidad de Madrid, Madrid, España"/>
+    <meta
+      name="keywords"
+      content="reformas, reformas integrales, renovación de baños, diseño de cocinas, decoración de interiores, servicios de reformas, Madrid"
+    />
+    <meta name="locality" content="Comunidad de Madrid, Madrid, España" />
     <!-- FIN DE META ETIQUETAS SEO -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -58,7 +102,7 @@
       rel="stylesheet"
     />
 
-    <link rel="canonical" href="https://amanoryd.es">
+    <link rel="canonical" href="https://amanoryd.es" />
 
     <script
       src="https://kit.fontawesome.com/78008905f2.js"
@@ -67,13 +111,12 @@
   </head>
 
   <body>
-
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name"/>
-      <input type="email" name="email"/>
-      <input type="tel" name="phone"/>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
       <textarea name="message"></textarea>
-      <input type="submit"/>
+      <input type="submit" />
     </form>
 
     <!-- Google Tag Manager (noscript) -->

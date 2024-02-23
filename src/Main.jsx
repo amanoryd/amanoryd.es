@@ -55,6 +55,7 @@ const Main = () => {
         style={{ background: "var(--low-tone)" }}
         buttonStyle={{ color: "var(--color-uno)", background: "var(--complement2)",fontSize: "13px" }}
         expires={30}
+        onAccept={() => {consentGrantedAdStorage()}}
       >
         Usamos cookies para mejorar la experiencia de usuario, mostrar contenido
         personalizado y analizar el tráfico de nuestra web. Al hacer click en

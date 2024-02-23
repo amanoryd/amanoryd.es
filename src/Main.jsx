@@ -24,7 +24,6 @@ import "./Breakpoints.css";
 import "./colorPalette.css";
 
 const Main = () => {
-
   // eslint-disable-next-line no-unused-vars
   const history = useNavigate();
 
@@ -53,14 +52,28 @@ const Main = () => {
         declineButtonText="Rechazar"
         cookieName="CookieNotice"
         style={{ background: "var(--low-tone)" }}
-        buttonStyle={{ color: "var(--color-uno)", background: "var(--complement2)",fontSize: "13px" }}
+        buttonStyle={{
+          color: "var(--color-uno)",
+          background: "var(--complement2)",
+          fontSize: "13px",
+        }}
         expires={30}
-        onAccept={consentGrantedAdStorage()}
+        onAccept={function consentGrantedAdStorage() {
+          gtag("consent", "update", {
+            ad_user_data: "granted",
+            ad_personalization: "granted",
+            ad_storage: "granted",
+            analytics_storage: "granted",
+          });
+        }}
       >
         Usamos cookies para mejorar la experiencia de usuario, mostrar contenido
         personalizado y analizar el tráfico de nuestra web. Al hacer click en
-        &quot;Aceptar&quot;, apruebas el consentimiento de nuestro uso de cookies. {" "}
-        <Link to="/cookies" onClick={handleLinkClick}>Leer más</Link>
+        &quot;Aceptar&quot;, apruebas el consentimiento de nuestro uso de
+        cookies.{" "}
+        <Link to="/cookies" onClick={handleLinkClick}>
+          Leer más
+        </Link>
       </CookieConsent>
     </>
   );

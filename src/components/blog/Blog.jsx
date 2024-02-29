@@ -7,6 +7,7 @@ function Blog() {
 
   useEffect(() => {
     // Obtener el ID del último post al montar el componente
+    // Archivo con los posts del blog -> "BlogPosts.js"
     const sortedPosts = BlogPosts.sort((a, b) => b.id - a.id);
     const lastPostId = sortedPosts[0]?.id;
     setSelectedPostId(lastPostId);

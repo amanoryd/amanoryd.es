@@ -68,7 +68,7 @@ function Profesionales() {
               <div key={post.id} id="feed-content" className="overflow">
                 {post.media_url.includes(".mp4") ? (
                   // Si la URL del medio contiene ".mp4", usa un elemento de video
-                  <video controls playsInline muted loop>
+                  <video controls playsInline muted loop style={{aspectRatio: "1"}}>
                     <source src={post.media_url} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
                   </video>
@@ -97,7 +97,7 @@ function Profesionales() {
               <div key={post.id} id="feed-content" className="overflow">
                 {post.media_url.includes(".mp4") ? (
                   // Si la URL del medio contiene ".mp4", usa un elemento de video
-                  <video controls playsInline muted loop>
+                  <video controls playsInline muted loop style={{aspectRatio: "1"}}>
                     <source src={post.media_url} type="video/mp4" />
                     Tu navegador no admite el elemento de video.
                   </video>

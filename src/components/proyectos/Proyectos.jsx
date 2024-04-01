@@ -97,16 +97,52 @@ function Proyectos() {
             height: 1024,
           },
           {
-            largeURL: "./proyectos/1-6/1-6-567x1024-5.webp",
-            thumbnailURL: "./proyectos/1-6/mini-1-6-567x1024-5.webp",
-            width: 567,
-            height: 1024,
-          },
-          {
             largeURL: "./proyectos/1-6/1-6-768x1024-6.webp",
             thumbnailURL: "./proyectos/1-6/mini-1-6-768x1024-6.webp",
             width: 768,
             height: 1024,
+          },
+          {
+            largeURL: "./proyectos/1-7/cocina-1536x2048-0001.webp",
+            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0001-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-7/cocina-1536x2048-0002.webp",
+            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0002-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-7/cocina-1536x2048-0003.webp",
+            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0003-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-7/cocina-1536x2048-0004.webp",
+            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0004-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-8/bano-1536x2048-0001.webp",
+            thumbnailURL: "./proyectos/1-8/bano-1536x2048-0001-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-8/bano-1536x2048-0002.webp",
+            thumbnailURL: "./proyectos/1-8/bano-1536x2048-0002-mini.webp",
+            width: 1536,
+            height: 2048,
+          },
+          {
+            largeURL: "./proyectos/1-8/bano-1536x2048-0003.webp",
+            thumbnailURL: "./proyectos/1-8/bano-1536x2048-0003-mini.webp",
+            width: 1536,
+            height: 2048,
           },
         ]}
       />

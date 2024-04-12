@@ -108,18 +108,18 @@ function Proyectos() {
             width: 1536,
             height: 2048,
           },
-          {
-            largeURL: "./proyectos/1-7/cocina-1536x2048-0002.webp",
-            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0002-mini.webp",
-            width: 1536,
-            height: 2048,
-          },
-          {
-            largeURL: "./proyectos/1-7/cocina-1536x2048-0003.webp",
-            thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0003-mini.webp",
-            width: 1536,
-            height: 2048,
-          },
+          // {
+          //   largeURL: "./proyectos/1-7/cocina-1536x2048-0002.webp",
+          //   thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0002-mini.webp",
+          //   width: 1536,
+          //   height: 2048,
+          // },
+          // {
+          //   largeURL: "./proyectos/1-7/cocina-1536x2048-0003.webp",
+          //   thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0003-mini.webp",
+          //   width: 1536,
+          //   height: 2048,
+          // },
           {
             largeURL: "./proyectos/1-7/cocina-1536x2048-0004.webp",
             thumbnailURL: "./proyectos/1-7/cocina-1536x2048-0004-mini.webp",

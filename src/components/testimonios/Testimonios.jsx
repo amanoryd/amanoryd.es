@@ -78,7 +78,7 @@ const Testimonios = () => {
               alt="4.3"
               style={{ width: "200px" }}
             />
-            <h3>4,3</h3>
+            <h3>4,4</h3>
           </div>
           <h2 style={{ textAlign: "center" }}>Amano, Reformas y Decoración</h2>
         </div>

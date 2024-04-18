@@ -75,7 +75,7 @@ const Testimonios = () => {
             <img src="./Google__G__logo.png" alt="Google logo" />
             <img
               src="./five_stars_maps.svg"
-              alt="4.3"
+              alt="4,4"
               style={{ width: "200px" }}
             />
             <h3>4,4</h3>

@@ -7,7 +7,7 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-
+      
       // Set default consent to 'denied' as a placeholder
       // Determine actual values based on your own requirements
       gtag("consent", "default", {
@@ -97,18 +97,11 @@
   </head>
 
   <body>
-    <form
-      name="contact"
-      netlify
-      data-netlify-recaptcha="true"
-      data-netlify="true"
-      hidden
-    >
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="tel" name="phone" />
       <textarea name="message"></textarea>
-      <div data-netlify-recaptcha="true"></div>
       <input type="submit" />
     </form>
 

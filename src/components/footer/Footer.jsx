@@ -100,7 +100,7 @@ function Footer() {
       </div>
 
       <div className="copyright">
-        <p>Copyright © 2023 Amano, Reformas y Decoración</p>
+        <p>Copyright © 2024 Amano, Reformas y Decoración</p>
         <Link to="/cookies" onClick={handleLinkClick}>
           Política de cookies
         </Link>

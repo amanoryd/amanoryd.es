@@ -37,7 +37,7 @@ const Contacto = () => {
 
         <div className="container">
           <div className="contactForm">
-            <form name="contact" action="/contact" method="post">
+            <form name="contact" action="/contact" method="POST">
               <input type="hidden" name="form-name" value="contact" />
               <h2>Déjanos un mensaje</h2>
               <div className="inputBox">

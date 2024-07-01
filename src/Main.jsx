@@ -66,6 +66,7 @@ const Main = () => {
             ad_personalization: "granted",
             analytics_storage: "granted",
           });
+          window.location.reload();
         }}
       >
         Usamos cookies para mejorar la experiencia de usuario, mostrar contenido

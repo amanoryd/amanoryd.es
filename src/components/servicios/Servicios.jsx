@@ -42,7 +42,7 @@ const servData = [
 const Servicios = () => {
 
   return (
-    <section className="services">
+    <section className="services" id="services">
       <h1>Servicios</h1>
       <p>
         Nos dedicamos a transformar tus ideas en realidad, convertimos tu visión

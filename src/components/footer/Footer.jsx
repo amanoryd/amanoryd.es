@@ -17,6 +17,12 @@ function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const handleLinkToServices = () => {
+    // Desplazar a la sección de "Servicios"
+    let servicesId = document.getElementById("services");
+    servicesId.scrollIntoView({behavior: "smooth"});
+  };
+
   return (
     <footer className="footer">
       <div className="info1-1">
@@ -68,6 +74,11 @@ function Footer() {
             <li>
               <Link to="/" onClick={handleLinkClick}>
                 Inicio
+              </Link>
+            </li>
+            <li>
+              <Link to="/" onClick={handleLinkToServices}>
+                Servicios
               </Link>
             </li>
             <li>

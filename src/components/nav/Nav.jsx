@@ -12,6 +12,12 @@ function Nav() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleLinkToServices = () => {
+    // Desplazar a la sección de "Servicios"
+    let servicesId = document.getElementById("services");
+    servicesId.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
 
@@ -23,6 +29,7 @@ function Nav() {
         <div className={`navigation ${menuOpen ? "active" : ""}`}>
           <div className="navigation-items">
             <Link to="/">Inicio</ Link>
+            <Link to="/" onClick={handleLinkToServices}>Servicios</Link>
             <Link to="/proyectos">Proyectos</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/contacto">Contacto</Link>

@@ -60,7 +60,6 @@ const Main = () => {
         expires={30}
         onAccept={() => {
           console.log("Cookie consent accepted!");
-          consentGrantedAdStorage()
           window.gtag("consent", "update", {
             ad_storage: "granted",
             ad_user_data: "granted",

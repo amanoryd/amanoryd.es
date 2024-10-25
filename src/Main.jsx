@@ -59,6 +59,7 @@ const Main = () => {
         }}
         expires={30}
         onAccept={() => {
+          window.location.reload();
           console.log("Cookie consent accepted!");
           window.gtag("consent", "update", {
             ad_storage: "granted",
@@ -66,7 +67,6 @@ const Main = () => {
             ad_personalization: "granted",
             analytics_storage: "granted",
           });
-          window.location.reload();
         }}
       >
         Usamos cookies para mejorar la experiencia de usuario, mostrar contenido

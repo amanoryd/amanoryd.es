@@ -144,6 +144,24 @@ function Proyectos() {
             width: 1536,
             height: 2048,
           },
+          {
+            largeURL: "./proyectos/1-9/bano-2578x3438-0001.webp",
+            thumbnailURL: "./proyectos/1-9/bano-2578x3438-0001-mini.webp",
+            width: 2578,
+            height: 3438,
+          },
+          {
+            largeURL: "./proyectos/1-9/bano-3024x4032-0002.webp",
+            thumbnailURL: "./proyectos/1-9/bano-3024x4032-0002-mini.webp",
+            width: 3024,
+            height: 4032,
+          },
+          {
+            largeURL: "./proyectos/1-9/bano-2268x4032-0003.webp",
+            thumbnailURL: "./proyectos/1-9/bano-2268x4032-0003-mini.webp",
+            width: 2268,
+            height: 4032,
+          },
         ]}
       />
       {/* <button className="button-a1" style={{cursor: "pointer"}}>Ver más</button> */}

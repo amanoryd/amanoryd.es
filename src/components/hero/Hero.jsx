@@ -1,9 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect, useRef } from 'react';
-import './Hero.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { isMobile } from 'react-device-detect';
+import React, { useState, useEffect, useRef } from "react";
+import "./Hero.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faTiktok,
+} from "@fortawesome/free-brands-svg-icons";
+import { isMobile } from "react-device-detect";
 
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
@@ -41,11 +45,11 @@ function Hero() {
 
   useEffect(() => {
     // Agregar un event listener para detectar cambios de orientación
-    window.addEventListener('orientationchange', handleOrientationChange);
+    window.addEventListener("orientationchange", handleOrientationChange);
 
     return () => {
       // Limpia el event listener cuando el componente se desmonta
-      window.removeEventListener('orientationchange', handleOrientationChange);
+      window.removeEventListener("orientationchange", handleOrientationChange);
     };
   }, []);
 
@@ -61,8 +65,14 @@ function Hero() {
         {[0, 1, 2, 3, 4].map((index) => (
           <video
             key={index}
-            className={`video-slide ${index === activeSlide ? 'active' : ''}`}
-            src={`/${isMobile ? `video-movil-${orientation === 0 ? 'vertical' : 'horizontal'}-${index}.mp4` : `${index}.mp4`}`}
+            className={`video-slide ${index === activeSlide ? "active" : ""}`}
+            src={`/${
+              isMobile
+                ? `video-movil-${
+                    orientation === 0 ? "vertical" : "horizontal"
+                  }-${index}.mp4`
+                : `${index}.mp4`
+            }`}
             autoPlay
             muted
             loop
@@ -71,54 +81,60 @@ function Hero() {
         ))}
 
         {[0, 1, 2, 3, 4].map((index) => (
-          <div key={index} className={`content ${index === activeSlide ? 'active' : ''}`}>
-            
+          <div
+            key={index}
+            className={`content ${index === activeSlide ? "active" : ""}`}
+          >
             <h1>
-              {index === 0 && 'Profesionales'}
-              {index === 1 && 'Hogar'}
-              {index === 2 && 'Reformas'}
-              {index === 3 && 'Hogar Mejorado.'}
-              {index === 4 && 'Somos'}
+              {index === 0 && "Profesionales"}
+              {index === 1 && "Hogar"}
+              {index === 2 && "Reformas"}
+              {index === 3 && "Hogar Mejorado."}
+              {index === 4 && "Somos"}
               <br />
-              <span>{index === 0 && 'de la Transformación.'}</span>
-              <span>{index === 1 && 'Renovado'}</span>
-              <span>{index === 2 && 'Personalizadas'}</span>
-              <span>{index === 3 && 'Vida Mejorada.'}</span>
-              <span>{index === 4 && 'Amano, reformas y decoración.'}</span>
+              <span>{index === 0 && "de la Transformación."}</span>
+              <span>{index === 1 && "Renovado"}</span>
+              <span>{index === 2 && "Personalizadas"}</span>
+              <span>{index === 3 && "Vida Mejorada."}</span>
+              <span>{index === 4 && "Amano, reformas y decoración."}</span>
             </h1>
-            <div className='container-text'>
+            <div className="container-text">
               <p>
-                {index === 0 && 'Calidad, confianza y resultados excepcionales.'}
-                {index === 1 && 'Creamos espacios que inspiran y mejoran la vida de nuestros clientes.'}
-                {index === 2 && 'Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad.'}
-                {index === 3 && 'Déjanos hacer realidad tus ideas y crear el hogar de tus sueños.'}
-                {index === 4 && ''}
+                {index === 0 &&
+                  "Calidad, confianza y resultados excepcionales."}
+                {index === 1 &&
+                  "Creamos espacios que inspiran y mejoran la vida de nuestros clientes."}
+                {index === 2 &&
+                  "Somos un equipo de expertos en reformas, con años de experiencia y una pasión por el diseño y la funcionalidad."}
+                {index === 3 &&
+                  "Déjanos hacer realidad tus ideas y crear el hogar de tus sueños."}
+                {index === 4 && ""}
               </p>
             </div>
             {/* <a href="#" className='button-a1'>Read More</a> */}
-
           </div>
         ))}
 
         <div className="media-icons">
-          
-          <a href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES" target='_blank'>
+          <a
+            href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://www.instagram.com/amano_reformas/" target='_blank'>
+          <a href="https://www.instagram.com/amano_reformas/" target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.twitter.com/amanoryd/" target='_blank'>
-            <FontAwesomeIcon icon={faTwitter} />
+          <a href="https://www.tiktok.com/@amano.reformas" target="_blank">
+            <FontAwesomeIcon icon={faTiktok} />
           </a>
-
         </div>
 
         <div className="slider-navigation">
           {[0, 1, 2, 3, 4].map((index) => (
             <div
               key={index}
-              className={`nav-btn ${index === activeSlide ? 'active' : ''}`}
+              className={`nav-btn ${index === activeSlide ? "active" : ""}`}
               onClick={() => sliderNav(index)}
             ></div>
           ))}

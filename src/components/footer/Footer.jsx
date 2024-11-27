@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
-  faTwitter,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
 import { BiColor } from "react-icons/bi";
 
@@ -20,7 +20,7 @@ function Footer() {
   const handleLinkToServices = () => {
     // Desplazar a la sección de "Servicios"
     let servicesId = document.getElementById("services");
-    servicesId.scrollIntoView({behavior: "smooth"});
+    servicesId.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -51,9 +51,8 @@ function Footer() {
               <FontAwesomeIcon icon={faInstagram} />
               {/* Instagram */}
             </a>
-            <a href="https://www.twitter.com/amanoryd/" target="_blank">
-              <FontAwesomeIcon icon={faTwitter} />
-              {/* Twitter */}
+            <a href="https://www.tiktok.com/@amano.reformas" target="_blank">
+              <FontAwesomeIcon icon={faTiktok} />
             </a>
           </span>
         </div>
@@ -62,9 +61,19 @@ function Footer() {
           <h2>Estamos en</h2>
           <p>Calle Historias de la Radio 3, Portal 4 (Local), 28018 Madrid</p>
           <h2>
-            <a href="tel:+34917857716" style={{textDecoration: "none", color: "white"}}>+34 917 85 77 16</a>
+            <a
+              href="tel:+34917857716"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              +34 917 85 77 16
+            </a>
             <br />
-            <a href="tel:+34603030316" style={{textDecoration: "none", color: "white"}}>+34 603 03 03 16</a>
+            <a
+              href="tel:+34603030316"
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              +34 603 03 03 16
+            </a>
           </h2>
         </div>
 

@@ -32,19 +32,16 @@ const Popup = () => {
           <div className="popup-content">
 					{windowWidth < 860 ? (
               <video
-                src="./popup/video2014.mp4"
+                src="./popup/video2024.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
               />
             ) : (
-              <video
-                src="./popup/video2014.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
+              <img
+                src="./popup/felicitacion-navidad-2024.webp"
+                alt="Felicitación de Navidad 2024"
               />
             )}
             <button onClick={handleClose}>Cerrar</button>

@@ -226,7 +226,7 @@ const CookiesPolicy = () => {
                 <li>Cerrar. Se oculta el aviso en la presente página.</li>
                 <li>
                   Modificar su configuración. Podrá obtener más información sobre qué son las
-                  cookies, conocer la Política de cookies de www.miempresa.es y modificar la
+                  cookies, conocer la Política de cookies de https://amanoryd.es y modificar la
                   configuración de su navegador.
                 </li>
               </ul>

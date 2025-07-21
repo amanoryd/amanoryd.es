@@ -168,6 +168,18 @@ function Proyectos() {
             width: 1333,
             height: 1000,
           },
+          {
+            largeURL: "./proyectos/1-10/bano-1200x1600-0001.webp",
+            thumbnailURL: "./proyectos/1-10/bano-1200x1600-0001-mini.webp",
+            width: 1200,
+            height: 1600,
+          },
+          {
+            largeURL: "./proyectos/1-10/bano-1200x1600-0002.webp",
+            thumbnailURL: "./proyectos/1-10/bano-1200x1600-0002-mini.webp",
+            width: 1200,
+            height: 1600,
+          },
         ]}
       />
       {/* <button className="button-a1" style={{cursor: "pointer"}}>Ver más</button> */}

@@ -30,19 +30,19 @@ const Popup = () => {
       {isOpen && (
         <div className="popup-container">
           <div className="popup-content">
-					{/* {windowWidth < 860 ? (
-              <video
-                src="./popup/video2024.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-              />
-            ) : ( */}
+					{windowWidth < 860 ? (
               <img
+                className="popup-image-mobile"
                 src="./popup/horario-verano01.webp"
                 alt="Horario de verano 2025"
               />
+            ) : (
+              <img
+                className="popup-image-desktop"
+                src="./popup/horario-verano01.webp"
+                alt="Horario de verano 2025"
+              />
+            )}
             <button onClick={handleClose}>Cerrar</button>
           </div>
         </div>

@@ -8,7 +8,7 @@ import Contacto from "./src/Pages/Contacto";
 import CookiesPolicy from "./src/Pages/CookiesPolicy";
 import PrivacyPolicy from "./src/Pages/PrivacyPolicy";
 import GaleriaPage from "./src/Pages/GaleriaPage";
-import Servicios from "./src/components/servicios/Servicios";
+// import Servicios from "./src/components/servicios/Servicios";
 
 const router = createBrowserRouter([
   {

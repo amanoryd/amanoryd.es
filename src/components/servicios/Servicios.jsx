@@ -69,7 +69,8 @@ const Servicios = () => {
         ))}
       </div>
       <div className="heartbeat">
-        <a href="/contacto" className="button-a1">
+        <a href="/contacto" className="button-a1"
+        aria-label="Solicitar presupuesto de servicios de reformas y decoración">
           SOLICITAR PRESUPUESTO
         </a>
       </div>

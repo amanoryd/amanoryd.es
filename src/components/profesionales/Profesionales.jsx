@@ -24,7 +24,8 @@ function Profesionales() {
       </p>
 
       {/* los estilos de este botón estan en el css 'Hero.css' */}
-      <a className="button-a1" href="https://www.instagram.com/amano_reformas/">
+      <a className="button-a1" href="https://www.instagram.com/amano_reformas/"
+        aria-label="Ir al Instagram de Amano Reformas y Decoración">
         Síguenos en Instagram
       </a>
 
@@ -53,6 +54,7 @@ function Profesionales() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="caption"
+                    aria-label="Ver publicación completa en Instagram"
                   >
                     <p>{post.caption.slice(0, 100)}...</p>
                   </a>
@@ -82,6 +84,7 @@ function Profesionales() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="caption"
+                    aria-label="Ver publicación completa en Instagram"
                   >
                     <p>{post.caption.slice(0, 100)}...</p>
                   </a>
@@ -111,6 +114,7 @@ function Profesionales() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="caption"
+                    aria-label="Ver publicación completa en Instagram"
                   >
                     <p>{post.caption.slice(0, 100)}...</p>
                   </a>
@@ -124,6 +128,7 @@ function Profesionales() {
         <a
           className="button-a1"
           href="https://www.instagram.com/amano_reformas/"
+          aria-label="Ir al Instagram de Amano Reformas y Decoración"
         >
           Síguenos en Instagram
         </a>

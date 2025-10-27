@@ -118,14 +118,19 @@ function Hero() {
         <div className="media-icons">
           <a
             href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES"
+            aria-label="Ir a Facebook de Amano Reformas y Decoración"
             target="_blank"
           >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://www.instagram.com/amano_reformas/" target="_blank">
+          <a href="https://www.instagram.com/amano_reformas/" 
+          aria-label="Ir a Instagram de Amano Reformas y Decoración"
+          target="_blank">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.tiktok.com/@amano.reformas" target="_blank">
+          <a href="https://www.tiktok.com/@amano.reformas" 
+          aria-label="Ir a TikTok de Amano Reformas y Decoración"
+          target="_blank">
             <FontAwesomeIcon icon={faTiktok} />
           </a>
         </div>

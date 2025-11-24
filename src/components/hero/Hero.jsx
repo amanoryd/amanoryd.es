@@ -12,6 +12,7 @@ import { isMobile } from "react-device-detect";
 function Hero() {
   const [activeSlide, setActiveSlide] = useState(0);
   const [orientation, setOrientation] = useState(window.orientation);
+  const videoRefs = useRef([]);
 
   // Función personalizada para manejar intervalos
   function useInterval(callback, delay) {
@@ -53,11 +54,49 @@ function Hero() {
     };
   }, []);
 
+  // Precargar videos en background
+  useEffect(() => {
+    const nextSlide = (activeSlide + 1) % 5;
+    
+    // Cargar el video actual
+    if (videoRefs.current[activeSlide]) {
+      videoRefs.current[activeSlide].load();
+    }
+
+    // Precargar el siguiente video en background
+    if (videoRefs.current[nextSlide]) {
+      videoRefs.current[nextSlide].load();
+    }
+  }, [activeSlide]);
+
+  // Pausar video anterior y reproducir el nuevo
+  useEffect(() => {
+    videoRefs.current.forEach((video, index) => {
+      if (video) {
+        if (index === activeSlide) {
+          video.play().catch((err) => console.log("Error playing video:", err));
+        } else {
+          video.pause();
+        }
+      }
+    });
+  }, [activeSlide]);
+
   // Cambiar al siguiente slide automáticamente cada 7 segundos
   useInterval(() => {
     const nextSlide = (activeSlide + 1) % 5;
     setActiveSlide(nextSlide);
   }, 7000);
+
+  const getVideoSrc = (index) => {
+    return `/${
+      isMobile
+        ? `video-movil-${
+            orientation === 0 ? "vertical" : "horizontal"
+          }-${index}.mp4`
+        : `${index}.mp4`
+    }`;
+  };
 
   return (
     <section className="mainHero">
@@ -65,17 +104,11 @@ function Hero() {
         {[0, 1, 2, 3, 4].map((index) => (
           <video
             key={index}
+            ref={(el) => (videoRefs.current[index] = el)}
             className={`video-slide ${index === activeSlide ? "active" : ""}`}
-            src={`/${
-              isMobile
-                ? `video-movil-${
-                    orientation === 0 ? "vertical" : "horizontal"
-                  }-${index}.mp4`
-                : `${index}.mp4`
-            }`}
-            autoPlay
+            src={getVideoSrc(index)}
+            preload="auto"
             muted
-            loop
             playsInline
           ></video>
         ))}
@@ -111,7 +144,6 @@ function Hero() {
                 {index === 4 && ""}
               </p>
             </div>
-            {/* <a href="#" className='button-a1'>Read More</a> */}
           </div>
         ))}
 
@@ -120,17 +152,24 @@ function Hero() {
             href="https://www.facebook.com/amanoreformasydecoracion/?locale=es_ES"
             aria-label="Ir a Facebook de Amano Reformas y Decoración"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://www.instagram.com/amano_reformas/" 
-          aria-label="Ir a Instagram de Amano Reformas y Decoración"
-          target="_blank">
+          <a
+            href="https://www.instagram.com/amano_reformas/"
+            aria-label="Ir a Instagram de Amano Reformas y Decoración"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.tiktok.com/@amano.reformas" 
-          aria-label="Ir a TikTok de Amano Reformas y Decoración"
-          target="_blank">
+          <a
+            href="https://www.tiktok.com/@amano.reformas"
+            aria-label="Ir a TikTok de Amano Reformas y Decoración"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faTiktok} />
           </a>
         </div>

@@ -1,46 +1,68 @@
 import React, { useState } from "react";
 import Nav from "../components/nav/Nav";
 import Footer from "../components/footer/Footer";
-// Utilizo librería React-Icons en este documento
 import { FaMapPin, FaPhoneVolume } from "react-icons/fa6";
-
-// COMPORTAMIENTO RESPONSIVE DENTRO DE ESTE ARCHIVO CSS //
 import "../Pages/styles/Contacto.css";
 
 const Contacto = () => {
   const [formStatus, setFormStatus] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleDirectionsClick = () => {
-    // Coordenadas //
     const latitude = "40.38026613327212";
     const longitude = "-3.6556973738123415";
-
-    // URL de Google Maps con las coordenadas
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${latitude},${longitude}`;
-
-    // Abre la URL en una nueva pestaña
     window.open(googleMapsUrl, "_blank");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
+    setFormStatus("");
     
     const form = e.target;
-    const formData = new FormData(form);
+    const formData = {
+      name: form.name.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      message: form.message.value,
+    };
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        setFormStatus("¡Mensaje enviado correctamente! Te contactaremos pronto.");
-        form.reset();
-      })
-      .catch((error) => {
-        setFormStatus("Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.");
-        console.error(error);
+    try {
+      // Enviar a Netlify Forms
+      const netlifyResponse = await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams({
+          "form-name": "contact",
+          ...formData
+        }).toString(),
       });
+
+      if (!netlifyResponse.ok) {
+        throw new Error("Error en Netlify Forms");
+      }
+
+      // Enviar correo de confirmación
+      const emailResponse = await fetch("/.netlify/functions/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!emailResponse.ok) {
+        throw new Error("Error al enviar el correo");
+      }
+
+      setFormStatus("¡Mensaje enviado correctamente! Recibirás un correo de confirmación en breve.");
+      form.reset();
+      
+    } catch (error) {
+      console.error(error);
+      setFormStatus("Hubo un error al enviar el mensaje. Por favor, intenta de nuevo o llámanos directamente.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -65,7 +87,6 @@ const Contacto = () => {
             >
               <input type="hidden" name="form-name" value="contact" />
               
-              {/* Campo honeypot oculto para prevenir spam */}
               <p style={{ display: "none" }}>
                 <label>
                   No llenes esto si eres humano: <input name="bot-field" />
@@ -75,34 +96,41 @@ const Contacto = () => {
               <h2>Déjanos un mensaje</h2>
               
               <div className="inputBox">
-                <input type="text" id="name" name="name" autoComplete="on" required />
+                <input type="text" id="name" name="name" autoComplete="on" required disabled={isLoading} />
                 <span htmlFor="name">Nombre</span>
               </div>
               
               <div className="inputBox">
-                <input type="email" id="email" name="email" autoComplete="on" required />
+                <input type="email" id="email" name="email" autoComplete="on" required disabled={isLoading} />
                 <span htmlFor="email">Email</span>
               </div>
               
               <div className="inputBox">
-                <input type="tel" id="phone" name="phone" autoComplete="on" required />
+                <input type="tel" id="phone" name="phone" autoComplete="on" required disabled={isLoading} />
                 <span htmlFor="phone">Teléfono de contacto</span>
               </div>
               
               <div className="inputBox">
-                <textarea id="message" name="message" autoComplete="off" required></textarea>
+                <textarea id="message" name="message" autoComplete="off" required disabled={isLoading}></textarea>
                 <span htmlFor="message">Escribe tu mensaje...</span>
               </div>
               
               <div className="inputBox">
-                <input type="submit" value="Enviar" />
+                <input 
+                  type="submit" 
+                  value={isLoading ? "Enviando..." : "Enviar"} 
+                  disabled={isLoading}
+                  style={{ opacity: isLoading ? 0.6 : 1, cursor: isLoading ? "not-allowed" : "pointer" }}
+                />
               </div>
 
               {formStatus && (
                 <p style={{ 
                   marginTop: "1rem", 
                   padding: "0.75rem", 
-                  backgroundColor: formStatus.includes("error") ? "#fee" : "#efe",
+                  backgroundColor: formStatus.includes("error") ? "#fee" : "#d4edda",
+                  color: formStatus.includes("error") ? "#721c24" : "#155724",
+                  border: `1px solid ${formStatus.includes("error") ? "#f5c6cb" : "#c3e6cb"}`,
                   borderRadius: "4px",
                   textAlign: "center"
                 }}>

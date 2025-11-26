@@ -100,7 +100,7 @@ exports.handler = async (event, context) => {
       `
     };
 
-    // Correo de notificación para ti
+    // Correo de notificación para la empresa
     const mailOptionsEmpresa = {
       from: '"Formulario Web Amano" <' + process.env.EMAIL_USER + '>',
       to: process.env.EMAIL_USER,

@@ -81,7 +81,7 @@ exports.handler = async (event, context) => {
                 <p style="margin: 5px 0; white-space: pre-wrap;">${message}</p>
               </div>
               
-              <p>Nuestro horario de atención es de <strong>lunes a viernes de 9:00 a 18:00</strong>.</p>
+              <p>Nuestro horario de atención es de <strong>lunes a viernes, mañanas de 9:00 a 14:00, tardes de 16:00 a 19:00</strong>.</p>
               <p>Responderemos tu consulta en un plazo máximo de 24-48 horas laborables.</p>
               
               <div style="text-align: center;">

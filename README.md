@@ -110,6 +110,26 @@ La llamada a las API se hacen a traves de la importación del archivo `useFetch.
 >
 >Las claves API de estos servicios estan almacenadas como variables de entorno en `NETLIFY` y `Google Cloud`.
 
+## Sistema de Notificaciones por Email
+
+El sitio web cuenta con un sistema automatizado de envío de correos electrónicos que confirma al usuario la recepción exitosa de su consulta cuando deja un comentario en la sección de "Contáctanos".
+
+### Implementación Técnica
+
+**Netlify Functions:** Se utiliza una serverless function alojada en Netlify para manejar el envío de correos electrónicos de manera segura y escalable.
+
+**Archivo principal:** `./netlify/functions/send-email.js` contiene toda la lógica de envío de correos utilizando Nodemailer.
+
+**Variables de entorno:** Los parámetros de configuración del correo electrónico (credenciales SMTP, clave de aplicación, etc.) están almacenados de forma segura en las variables de entorno de Netlify.
+
+### Flujo de funcionamiento:
+
+1. El usuario completa el formulario de contacto y envía su consulta
+2. El frontend realiza una petición a la Netlify Function
+3. La función `send-email.js` procesa la solicitud y envía un correo de confirmación al usuario utilizando Nodemailer
+4. El usuario recibe una confirmación automática de que su mensaje ha sido recibido exitosamente
+
+Este sistema mejora la experiencia del usuario al proporcionar retroalimentación inmediata y profesional sobre el estado de su consulta.
 
 ## Licencia
 
